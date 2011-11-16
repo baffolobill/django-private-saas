@@ -12,7 +12,12 @@ UProfileObject.prototype = {
     register: function(sender){
         var form = jQuery(sender).closest('form');
         if (jQuery.FormCheck.validateForm(form[0])){
-            this.post_form(form);
+            this.post_form(form, function(response){
+                var p = jQuery('#reg__captcha').parent();
+                jQuery('img', p).remove();
+                p.prepend(response.captcha);
+                jQuery('#reg__captcha').val('');
+            });
         }
         return false;
     },
@@ -143,10 +148,9 @@ UProfileObject.prototype = {
                     }
 
                     self.clear_form(form_obj);
-
-                    if (typeof(success_callback) == 'function'){
-                        success_callback(response);
-                    }
+                }
+                if (typeof(success_callback) == 'function'){
+                    success_callback(response);
                 }
             },
             complete: function(){

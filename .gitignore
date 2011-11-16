@@ -6,4 +6,4 @@ uploads
 *.egg-info
 *.sqlite3
 *.emacs.desktop
-
+private_saas/static/captcha/*

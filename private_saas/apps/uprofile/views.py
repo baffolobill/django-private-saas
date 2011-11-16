@@ -62,7 +62,8 @@ def profile__register(request):
             return _error(_('Cannot log in new user.'))
     else:
         form_err = [(k,v[0]) for k, v in form.errors.items()]
-        return JSONResponse({'success':0, 'form_errors':form_err})
+        return JSONResponse({'success':0, 'form_errors':form_err,
+                'captcha':unicode(form['captcha'])})
 
 
 def profile__login(request):
