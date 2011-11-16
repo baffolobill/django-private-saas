@@ -1,0 +1,14 @@
+Private SaaS is a start point (boilerplate) to build subscription-like service with invite based registration.
+
+Features:
+- invite based registration;
+- time based subscription with bonus period;
+- promocodes, which allow extend subscription;
+- ajax based log in, registration and change/reset password;
+
+
+TODO:
+- module based payment;
+- remove unnecessary js/css/images;
+- remove django-registration dependency;
+- try to make apps independent;
