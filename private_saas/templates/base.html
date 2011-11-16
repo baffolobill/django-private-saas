@@ -1,0 +1,66 @@
+{%spaceless%}
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">#}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+  <link rel="icon" type="image/png" href="{{STATIC_URL}}images/favicon.png" />
+  {% block myMeta %}{% endblock %}
+
+  <title>{% block title %}Private SaaS{% endblock %}</title>
+
+  <script src="{{STATIC_URL}}js/jquery-1.6.1.min.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/cookie.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/jquery.plugins/jgrowl/jquery.jgrowl_google.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/messenger.js" type="text/javascript"></script>
+
+  <link href="{{STATIC_URL}}css/addons.css" type="text/css" rel="stylesheet" />
+  {#<link href="{{STATIC_URL}}css/layout.css" type="text/css" rel="stylesheet" />#}
+  <link href="{{STATIC_URL}}css/template.css" type="text/css" rel="stylesheet" />
+  <link href="{{STATIC_URL}}js/jquery.plugins/jgrowl/jquery.jgrowl.css" type="text/css" rel="stylesheet"/>
+
+
+<!--[if IE]>
+  <link href="{{STATIC_URL}}css/ie.css" type="text/css" rel="stylesheet" />
+<![endif]-->
+
+{% comment %}
+<!--[if lt IE 7.0]>
+  <link href="{{MEDIA_URL}}css/ie7minus.css" type="text/css" />
+<![endif]-->
+{% endcomment %}
+
+<!--[if IE 7.0]>
+<style>
+.clearfix { display: inline-block; } /* IE7 xhtml */
+</style>
+<![endif]-->
+
+<!--[if lte IE 8.0]>
+<style>
+.br2, .br4, .br6 {
+    border: 1px solid #3c3c3c !important;
+    behavior: url({{STATIC_URL}}css/PIE.htc);
+}
+</style>
+<![endif]-->
+
+
+{% block iewarningcheck %}
+<script type="text/javascript">
+if(jQuery.browser.msie && parseFloat(jQuery.browser.version) < 8){
+  window.location.href = '{% url ie-warning %}';
+}
+</script>
+{% endblock %}
+
+{% block header %}{% endblock %}
+</head>
+<body id="bd" class="fs3">
+  <div id="wrapper" class="wrapper">
+    {% block body %}{% endblock %}
+  </div>
+</body>
+</html>
+{%endspaceless%}

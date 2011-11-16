@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<div id="profile__payments__history" class="profile__block no-display">
+    <h2 class="title">{% trans 'Payments History' %}</h2>
+
+    <div class="wrap">
+        <table class="payment__history" width="100%">
+            <thead>
+                <tr>
+                    <th class="datetime">{% trans 'Date/time' %}</th>
+                    <th class="payment-method">{% trans 'Event' %}</th>
+                    <th class="amount">{% trans 'Amount' %}</th>
+                    <th class="days">{% trans 'Days' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in user.transaction_set.all %}
+                <tr class="{% cycle 'odd' 'even' %}">
+                    <td class="datetime">{{item.timestamp|date:"Y-m-d H:i:s"}}</td>
+                    <td class="payment-method">{{item.event|title}}</td>
+                    <td class="amount">{{item.amount|default:0}} &euro;</td>
+                    <td class="days">
+                        {{item.period|default:0}}
+                        {% if item.bonus %}<span class="bonus">+{{item.bonus}}</span>{% endif %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4">{% trans 'No payments yet.' %}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+/** my **/
+.tipContainer {
+    z-index: 100;
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: 40%;
+    display: none;
+}
+.tip-content { 
+    height: 100%; 
+    min-height: 10px; 
+    position: relative;
+    background: #3c3c3c;
+    color: #fff;
+}
+.tip-content > .bodyTip {
+    clear: both;
+    padding: 20px 20px 10px 13px;
+}
+
+.closeTip {
+    width: 14px;
+    height: 14px;
+    background: url(tip_close.png) no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.tip-tl,
+.tip-tr,
+.tip-bl,
+.tip-br {
+    background: url(tip_shadow.png) no-repeat;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+}
+.tip-tl { background-position: 0px -9px; left: -14px; }
+.tip-tr { background-position: -26px -9px; left: 100%; margin-left: -12px; }
+.tip-bl { background-position: 0px -35px; margin: -26px 0 0 -14px; }
+.tip-br { background-position: -26px -35px; left: 100%; margin: -26px 0 0 -12px; }
+
+.tip-t,
+.tip-b {
+    background: url(tip_shadow.png);
+    display: block;
+    margin: 0 12px;
+}
+.tip-t { height: 9px; }
+.tip-b { height: 19px; background-position: 0px -61px; }
+
+.tip-l,
+.tip-r {
+    background: url(tip_shadow_lr.png);
+    position: absolute;
+    top: 26px;
+    bottom: 26px;
+    width: 14px;
+}
+.tip-l { left: -14px; }
+.tip-r { background-position: -14px 0px; left: 100%; }

@@ -1,0 +1,153 @@
+/*\ slider block \*/
+.slider-block {
+    margin: 0 0 20px !important;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+.slider-block div.main {}
+
+.slider-block .scroll-bar-wrap .ui-handle-helper-parent {
+/*    background: #3c3c3c;*/
+}
+
+
+.slider-block .slider-wrapper { 
+/*    background: #fff;*/
+    padding: 0 16px;
+}
+
+.slider-block .slider-wrapper div.top,
+.slider-block .slider-wrapper div.slider-content,
+.slider-block .slider-wrapper div.bottom {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-block .slider-wrapper .top {}
+
+.slider-block .slider-wrapper .top .slider-title,
+.slider-block .slider-wrapper .top .slider-see-all {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    font-size: 130%;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 6px 0;
+    padding: 0;
+}
+.slider-block .slider-wrapper .top .slider-title {
+    float: left;
+}
+.slider-block .slider-wrapper .top .slider-see-all {
+    float: right;
+}
+.slider-block .slider-wrapper .top .slider-see-all a {
+    text-decoration: none;
+    border-bottom: 1px dashed #3c3c3c;
+}
+.slider-block .slider-wrapper .top .slider-see-all a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.slider-block .slider-wrapper .slider-pagination .scroll-bg,
+.slider-block .slider-wrapper .slider-pagination .scroller {
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.slider-block .slider-wrapper .slider-pagination .scroll-bg {
+    background: #000;
+}
+.slider-block .slider-wrapper .slider-pagination .scroller {
+    background: #3E5CBF;
+}
+
+
+.slider-block .slider-wrapper .scroll-pane { overflow: hidden; position: relative; color:#fff; }
+.slider-block .slider-wrapper .scroll-pane ul,
+.slider-block .slider-wrapper .scroll-pane div.scroll-content {
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both;
+    width: 20000px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.slider-block .slider-wrapper .scroll-pane ul {
+    list-style: none;
+    list-style-type: none;
+}
+.slider-block .slider-wrapper .scroll-pane ul li {
+    display: block;
+    float: left;
+/*    width: 100px;*/
+/*    height: 140px;*/
+    margin-right: 18px;
+}
+
+.slider-block .slider-wrapper .scroll-pane ul li a {}
+
+.slider-block .slider-wrapper .scroll-pane ul li a img {
+    height: 80px;
+}
+.slider-block .slider-wrapper .scroll-pane ul li.last-item { margin-right: 0px; }
+
+/**/
+.scroll-pane { overflow: auto; width: 99%; float:left; }
+.scroll-content { 
+    width: 2000px; 
+    float: left; 
+    padding: 0 0 1px;
+    clear: both; 
+    margin: 0 0 1px; 
+}
+.scroll-bar-wrap { 
+    padding: 1px 4px 0 2px; 
+    margin: 3px -1px 3px -1px; 
+    height: 10px; 
+    clear: both;
+    visibility: hidden;
+}
+.scroll-bar-wrap .ui-slider {
+  background: none;
+  border: 0;
+  height: 8px;
+  margin: 0 auto;
+}
+.scroll-bar-wrap .ui-handle-helper-parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.scroll-bar-wrap .ui-slider-handle {
+  top: 0;
+  height: 8px;
+  background: #3c3c3c;
+  opacity: 0.5;
+  border: none !important;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.bodyMore .scroll-bar-wrap .ui-slider-handle {
+  background: #fcfcfc;
+}
+
+.bodyMore.active .scroll-pane .scroll-bar-wrap,
+.slider-block.active .scroll-pane .scroll-bar-wrap {
+    visibility: visible;
+}

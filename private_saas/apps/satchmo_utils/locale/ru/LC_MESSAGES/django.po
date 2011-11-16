@@ -1,0 +1,66 @@
+# Satchmo Translation Package
+# Copyright (C) 2008 Satchmo Project
+# This file is distributed under the same license as the Satchmo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Satchmo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-08 13:16+0300\n"
+"PO-Revision-Date: 2009-03-06 12:20+0300\n"
+"Last-Translator: Pavel Kiper <iwtbarh@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: .\numbers.py:23
+#, python-format
+msgid "%(value)s is not a valid number"
+msgstr "%(value)s  - неверное число"
+
+#: .\numbers.py:35
+msgid "Please enter a positive number"
+msgstr "Пожалуйста, введите положительное число"
+
+#: .\views.py:103
+msgid "Card type does not match card number."
+msgstr "Тип карты не соответствует номеру карты."
+
+#: .\views.py:105
+msgid "Invalid credit card number."
+msgstr "Неверный номер карты."
+
+#: .\thumbnail\config.py:4
+msgid "Thumbnail Settings"
+msgstr "Настройки миниатюр"
+
+#: .\thumbnail\config.py:9
+msgid "Thumbnail quality"
+msgstr "Качество миниатюры"
+
+#: .\thumbnail\config.py:10
+msgid "Use a 1-100 value here, which will change the quality of JPG thumbnails created for products and categories."
+msgstr "Введите число от 1 до 100, чтобы указать качество JPG картинок для продуктов и категорий."
+
+#: .\thumbnail\config.py:16
+msgid "Rename product images?"
+msgstr "Переименовать изображения продукта?"
+
+#: .\thumbnail\config.py:17
+msgid "Automatically rename product images on upload?"
+msgstr "Автоматически переименовывать изображения продукта при загрузке?"
+
+#: .\thumbnail\widgets.py:21
+msgid "Change:"
+msgstr "Изменить:"
+
+#: .\thumbnail\templates\widget\file.html.py:3
+msgid "Currently"
+msgstr "Текущий"
+
+#: .\thumbnail\templates\widget\file.html.py:4
+msgid "Change"
+msgstr "Изменить"

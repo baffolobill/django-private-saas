@@ -1,0 +1,23 @@
+{% extends 'base_with_mainnav.html' %}
+{% load i18n %}
+{% load compress %}
+
+{% block title %}Profile area{% endblock %}
+
+{% block header %}
+{{block.super}}
+
+{% endblock %}
+
+{% block container %}
+  <div id="mainbody">
+    <div class="main clearfix">
+
+      <div id="main">
+        <div class="main clearfix">
+          {% block content %}{% endblock %}
+        </div>
+      </div><!-- end #main -->
+    </div>
+  </div><!-- end #mainbody -->
+{% endblock %}

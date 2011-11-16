@@ -1,0 +1,24 @@
+{% load i18n %}
+
+<div id="profile__payments__promocode" class="profile__block no-display">
+    <h2 class="title">{% trans 'Promo codes' %}</h2>
+
+    <div class="wrap clearfix">
+        <form method="POST" action="{% url profile-payment-promocode-form %}">
+            {% csrf_token %}
+            <div class="fm__help">{% trans 'Promo codes are given as a reward for special achievement, winning contests and quizzes held within the resource.' %}</div>
+
+            <div class="fm__row">
+                <label for="payment__promocode">{% trans 'Promo code' %}:</label>
+            </div>
+            <div class="fm__row">
+                <input type="text" name="payment__promocode" id="payment__promocode" class="fm__field" value="" />
+            </div>
+            <div class="fm__hspacer"></div>
+
+            <div class="fm__row">
+                <input type="button" value="{% trans 'Submit' %}" onclick="return UProfile.promocode(this);" />
+            </div>
+        </form>
+    </div>
+</div>

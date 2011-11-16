@@ -1,0 +1,46 @@
+{% extends 'uprofile/base.html' %}
+{% load i18n %}
+{% load compress %}
+
+{% block title %}Profile area{% endblock %}
+
+{% block header %}
+{{block.super}}
+<script src="{{STATIC_URL}}js/jquery.blockUI.js" type="text/javascript"></script>
+<script src="{{STATIC_URL}}js/uprofile/uprofile.js" type="text/javascript"></script>
+<link href="{{STATIC_URL}}css/uprofile/cp_menu.css" type="text/css" rel="stylesheet" />
+<link href="{{STATIC_URL}}css/uprofile/default.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript">
+function show_block(block_id){
+  $("div.profile__block").map(function(){ if(!$(this).hasClass("no-display")) $(this).addClass("no-display"); });
+  $("#" + block_id).removeClass("no-display");
+
+  //return false;
+}
+jQuery(document).ready(function($){
+  var bl_id = window.location.hash;
+  if (bl_id.length > 0){
+    if (bl_id[0] == '#'){
+      bl_id = bl_id.substr(1);
+    }
+    if (jQuery('#'+bl_id).length){
+      show_block(bl_id);
+    }
+  }
+});
+</script>
+{% endblock %}
+
+{% block left_block %}{% include 'uprofile/layouts/menu/index.html' %}{% endblock %}
+
+{% block content %}
+<div>
+    {% include 'uprofile/layouts/personal/index.html' %}
+    {% include 'uprofile/layouts/payments/index.html' %}
+        {% include 'uprofile/layouts/payments/promocode.html' %}
+        {% include 'uprofile/layouts/payments/history.html' %}
+    {% include 'uprofile/layouts/history/index.html' %}
+    {% include 'uprofile/layouts/feedback/index.html' %}
+</div>
+{% endblock %}

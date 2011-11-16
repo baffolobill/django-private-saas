@@ -1,0 +1,577 @@
+#mainbody {
+    margin-left: 0px !important;
+}
+
+#evideo-block {}
+
+#evideo-block > .main > .mid
+{
+    margin-top: 20px;
+}
+
+#evideo-block .module
+{
+    float: left;
+    width: 200px;
+    clear: both;
+/*    border: 1px solid;*/
+}
+
+#evideo-body
+{
+    width: 740px; /* change back to 840 */
+    float: right;
+/*    border: 1px solid;*/
+}
+#evideo-body .main
+{
+    margin-left: 20px;
+}
+
+/** preview image **/
+.module .preview-image 
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.module .preview-image img 
+{
+/*    width: 110px;*/
+    max-width: 200px;
+    max-height: 130px;
+}
+.module .preview-image
+{
+    display: block;
+    background-color: #3c3c3c;
+    padding-top: 6px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+/** price **/
+.module .dropdown.price
+{
+    margin-top: 26px;
+/*    background: #3c3c3c;*/
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+/*    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;    
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;    */
+}
+.module .dropdown.price .label-button
+{
+    border-radius: 0px; 
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;  /* reset prev value  */
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;    
+    
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background: #3c3c3c;    
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+.module .dropdown.price a.label-button:hover,
+.module .dropdown.price a.expand-button:hover,
+.module .dropdown.price a.collapse-button:hover
+{
+    background-color: #3E5CBF;
+}
+.module .dropdown.price .expand-button,
+.module .dropdown.price .collapse-button
+{
+    border-radius: 0px; 
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;  /* reset prev value  */
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+
+    background: #3c3c3c;
+    display: block;
+    height: 26px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 6;
+}
+.module .dropdown.price .collapse-button
+{
+    border-radius: 0px; 
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: #443BC1;
+    bottom: -1px;
+    height: 27px;
+}
+.module .dropdown.price ul.operations
+{
+    top: 1px;
+}
+
+
+/** operations **/
+.module .operations
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+
+/** attributes **/
+.module .attributes
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.module .attributes .genre,
+.module .attributes .released,
+.module .attributes .duration,
+.module .attributes .language,
+.module .attributes .filesize,
+.module .attributes .copyass
+{
+    text-transform: none;
+    font-size: 95%;
+    color: #000;
+    font-family: "Trebuchet MS",sans-serif;
+    margin: 0;
+    padding: 2px 0;
+    overflow: hidden;
+    clear: both; 
+    display: block;    
+}
+
+.module .attributes .genre span.label,
+.module .attributes .released span.label,
+.module .attributes .duration span.label,
+.module .attributes .language span.label,
+.module .attributes .filesize span.label
+{
+    float: left;
+    margin-right: 5px;
+    padding: 0;
+    font-weight: normal !important;
+}
+
+.module .attributes .released span.value,
+.module .attributes .filesize span.value,
+.module .attributes .language span.value,
+.module .attributes .duration span.value
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal !important;
+}
+
+/** genre **/
+.module .attributes .genre {}
+.module .attributes .genre .label {}
+.module .attributes .genre .value {}
+
+.module .attributes .genre span.separator 
+{
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 2px;
+}
+
+
+.module .attributes .genre a, 
+.module .attributes .genre a:link,
+.module .attributes .genre a:visited,
+.module .attributes .genre a:active,
+
+.module .attributes .released a, 
+.module .attributes .released a:link,
+.module .attributes .released a:visited,
+.module .attributes .released a:active,
+
+.module .attributes .language a, 
+.module .attributes .language a:link,
+.module .attributes .language a:visited,
+.module .attributes .language a:active 
+{
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.module .attributes .genre a span, 
+.module .attributes .genre a:link span,
+.module .attributes .genre a:visited span,
+.module .attributes .genre a:active span,
+
+.module .attributes .released a span, 
+.module .attributes .released a:link span,
+.module .attributes .released a:visited span,
+.module .attributes .released a:active span,
+
+.module .attributes .language a span, 
+.module .attributes .language a:link span,
+.module .attributes .language a:visited span,
+.module .attributes .language a:active span
+{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+.module .attributes .genre a:hover,
+.module .attributes .released a:hover,
+.module .attributes .language a:hover { text-decoration: none; }
+
+.module .attributes .genre a:hover span,
+.module .attributes .released a:hover span,
+.module .attributes .language a:hover span
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+/** released **/
+.module .attributes .released {}
+.module .attributes .released span.label {}
+.module .attributes .released span.value {}
+
+/** filesize **/
+.module .attributes .filesize {}
+.module .attributes .filesize span.label {}
+.module .attributes .filesize span.value {}
+
+/** duration **/
+.module .attributes .duration {}
+.module .attributes .duration span.label {}
+.module .attributes .duration span.value {}
+
+/** language **/
+.module .attributes .language {}
+.module .attributes .language span.label {}
+.module .attributes .language span.value {}
+.module .attributes .language .languages { display: none; }
+
+
+/* description */
+#evideo-body .description { margin: 0; padding: 0; }
+#evideo-body .description .label {
+    font-size: 130%;
+    font-weight: bold;
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0 0 6px;
+    padding: 0;
+}
+#evideo-body .description .value {
+    float: left;
+    clear: both;
+}
+#evideo-body .description div.value span {}
+#evideo-body .description div.value span.intro-text 
+{
+    float: left;
+    clear: both;
+}
+
+#evideo-body .description div.value span.more-text {display:none;}
+#evideo-body .description div.value span.more-text ul
+{   
+    margin: 0.6em 0 0.8em;
+    padding-left: 2em;
+}
+#evideo-body .description div.value span.more-text ul li 
+{
+    list-style-type: square;
+    display: list-item;
+    margin-bottom: 0.4em;
+}
+#evideo-body .description div.value span.more-text p {
+    display: block;
+    margin: 0.6em 0 0.8em;
+}
+
+#evideo-body .description div.value a.more-button 
+{
+    display: block;
+    float: right;
+    clear: both;
+    text-decoration: none;
+}
+#evideo-body .description div.value a.more-button span,
+#evideo-body .description div.value a.more-button:active span,
+#evideo-body .description div.value a.more-button:visited span,
+#evideo-body .description div.value a.more-button:link span
+{
+    color: #000;
+    border-bottom: 1px dashed #000;
+}
+#evideo-body .description div.value a.more-button:hover span
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+
+
+/* episodes */
+
+/* summary */
+.episodes div.summary 
+{ 
+    margin: 0;
+    padding: 2px 0;
+    width: 100%; 
+    background: #888;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+}
+
+
+/* customer rating */
+.customer-ratings {
+    text-transform: none;
+    margin: 30px 0 30px;
+    padding: 0;
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+/** title **/
+.customer-ratings .title
+{
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: none;
+    font-size: 100%;
+}
+
+.customer-ratings .title span 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+}
+
+/** average rating **/
+.customer-ratings .rating
+{
+    cursor: pointer;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.customer-ratings .rating span.icon
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: url(ui-icons_0073ea_256x240.png) no-repeat;    
+}
+.customer-ratings .rating span.icon.expand
+{
+    background-position: -32px -16px;
+}
+.customer-ratings .rating span.icon.collapse 
+{
+    background-position: -64px -16px;
+}
+
+.customer-ratings .rating span.label,
+.customer-ratings .rating span.votes span.value,
+.customer-ratings .rating span.votes span.label
+{
+    font-size: 120%;
+    color: #000;
+}
+
+.customer-ratings .rating span.label {
+    text-transform: none;
+    float: left;
+    margin: 0 0 0 2px;
+    padding: 0;
+    font-weight: normal;
+}
+
+.customer-ratings .rating span.stars {
+    width: 58px;
+    height: 10px;
+    border: none;
+    display: block;
+    margin: 3px 0 0 5px;
+    padding: 0;
+    float: left;
+}
+.customer-ratings .rating span.rate0 {
+    background: url(./stars_0x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate1 {
+    background: url(./stars_1x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate2 {
+    background: url(./stars_2x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate3 {
+    background: url(./stars_3x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate4 {
+    background: url(./stars_4x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate5 {
+    background: url(./stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+
+.customer-ratings .rating span.votes {
+    float: left;
+    margin: 0 0 0 8px;
+    padding: 0;
+    font-weight: normal;
+}
+.customer-ratings .rating span.votes span.value,
+.customer-ratings .rating span.votes span.label {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+}
+.customer-ratings .rating span.votes span.label {
+    margin-left: 5px;
+}
+
+/** customer rating explanation **/
+.rating-explanation
+{
+    display: none;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.rating-explanation table,
+.rating-explanation table tr,
+.rating-explanation table tr td,
+.rating-explanation table tr th
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rating-explanation table { margin: 8px 0 0 10px; }
+
+.rating-explanation table tr td { padding-right: 6px; }
+
+.rating-explanation span.stars
+{
+    float: right;
+    width: 58px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.rating-explanation span.rate1
+{
+    width: 10px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate2
+{
+    width: 22px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate3
+{
+    width: 34px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate4
+{
+    width: 46px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate5
+{
+    width: 58px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+
+.rating-explanation .percent
+{
+    width: 80px;
+    background: #222;
+    height: 10px;
+    display: block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.rating-explanation .percent .fill
+{
+    float: left;
+    height: 10px;
+    background: #a830cf;
+    border-radius: 3px;
+    -moz-border-radius: 3px;    
+}
+
+
+/* rate */
+.customer-ratings .rate
+{
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.customer-ratings .rate .label
+{
+    font-size: 120%;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-weight: normal;
+}
+
+.customer-ratings .rate span.value
+{
+    margin-left: 6px;
+    display: block;
+    float: left;
+}

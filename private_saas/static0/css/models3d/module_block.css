@@ -1,0 +1,80 @@
+/*\ module block \*/
+.module-block { margin: 15px 0 10px; padding: 6px; }
+.module-block.rounded 
+{
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #888;
+}
+.module-block.filled { 
+    background-color: #888; 
+    color: #fff; 
+    border: none;
+}
+
+.module-block div.main { min-height: 30px; }
+
+.module-block div.main h3.title 
+{ 
+    font-size: 100%; 
+    background: none;
+    text-shadow: none;
+    padding: 3px 12px;
+    margin: 0;
+}
+.module-block div.main h3.title span { font-size: 130%; }
+
+.module-block .r2 {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.module-block .r4 {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+/** MODEL3D GROUP BLOCK **/
+.module-block.filled .model3d-group-block {
+    display: block;
+    background-color: #999;
+}
+.module-block.filled .model3d-group-block.hover,
+.module-block.filled .model3d-group-block:hover {
+    background-color: #aaa;
+}
+
+.module-block.filled .model3d-group-block a {
+    color: #fff;
+}
+
+.model3d-group-block { 
+    margin-bottom: 10px; 
+    padding: 2px;
+    background-color: #ededed;
+    cursor: pointer;
+}
+.model3d-group-block.hover,
+.model3d-group-block:hover {
+    text-decoration: none;
+    background-color: #dcdcdc;
+}
+.model3d-group-block.last { margin-bottom: 0; }
+
+.model3d-group-block img {
+    max-width: 182px;
+    display: block;
+    clear: both;
+}
+.module-block.filled .model3d-group-block img { max-width: 184px; }
+
+.model3d-group-block .title {
+    display: block;
+    overflow: hidden;
+    margin: 4px 4px 0;
+    text-decoration: underline;    
+}
+
+.model3d-group-block:hover .title { text-decoration: none; }

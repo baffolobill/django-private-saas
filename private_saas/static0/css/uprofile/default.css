@@ -1,0 +1,124 @@
+.profile__block {
+    width: 700px;
+    overflow: hidden;
+}
+.profile__block h2.title {
+    margin-bottom: 5px;
+}
+
+ul.profile__me__general,
+ul.profile__me__general li {
+    list-style-type: none;
+    list-style: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.profile__me__general li {}
+ul.profile__me__general li span {
+    display: block;
+    float: left;
+    clear: both;
+}
+ul.profile__me__general li span.key {}
+ul.profile__me__general li span.val {
+    font-weight: bold;
+}
+
+.profile__me__separator {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.fm__row {
+  padding: 0;
+  margin: 0 0 5px 0;
+  display: block;
+  float: left;
+  clear: both;
+}
+.fm__hspacer {
+  display: block;
+  float: left;
+  clear: both;
+  height: 12px;
+  width: 100%;
+}
+.fm__row label {
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: "Trebuchet MS",Arial,sans-serif;
+}
+.fm__row input[type=text],
+.fm__row input[type=password] {
+  padding: 2px 20px 2px 6px;
+  border: 1px solid #3c3c3c;
+  background-color: #fcfcfc;
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: "Trebuchet MS",Arial,sans-serif;
+}
+.fm__help {
+    margin: 7px 0;
+}
+.vwrong { border-color: #900 !important; }
+.vright { border-color: #060 !important; }
+
+.vnotice {
+    position: absolute;
+    width: 200px;
+    padding: 6px 16px;
+    color: #3c3c3c;/*#f00;*/
+    font-size: 10pt;
+    cursor: pointer;
+    z-index: 20;
+    background: #fff;
+    filter: Alpha(Opacity='90');
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    border: solid #000 3px;
+}
+
+
+
+/** feedback **/
+.fb__item {
+    float: left;
+    clear: both;
+    margin-bottom: 6px;
+}
+.fb__item__message {
+    float: left;
+    clear: both;
+    font-size: 13px;
+}
+.fb__item__answer {
+    float: left;
+    clear: both;
+    margin-left: 14px;
+    margin-top: 5px;
+    font-size: 12px;
+    border-left: 2px solid #3c3c3c;
+    padding-left: 8px;
+}
+
+/** payment **/
+table.payment__history {
+    margin-top: 10px;
+    width: 100%;
+}
+table.payment__history tr.odd {}
+table.payment__history tr.even { background: #eee; }
+
+table.payment__history thead th { border-bottom: 1px solid #3c3c3c; }
+
+table.payment__history .datetime { width: 150px; }
+table.payment__history .payment-method {}
+table.payment__history .amount { width: 100px; text-align: right; }
+table.payment__history .days { width: 100px; text-align: right; }
+table.payment__history .days span.bonus { color: #7D9385; }

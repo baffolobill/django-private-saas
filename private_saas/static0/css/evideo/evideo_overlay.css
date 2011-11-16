@@ -1,0 +1,98 @@
+/*\ evideo block \*/
+.evideo.overlay-content .left,
+.evideo.overlay-content .right {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    position: relative;
+    clear: none;
+}
+
+/* left */
+.evideo.overlay-content .left { width: 100px; }
+
+.evideo.overlay-content .left a.preview-button { display: none; }
+
+/* right */
+.evideo.overlay-content .right {
+    width: 400px;
+    padding-left: 16px;
+    display: block;
+    overflow: visible;    
+}
+
+.evideo.overlay-content .right .top,
+.evideo.overlay-content .right .mid,
+.evideo.overlay-content .right .bot {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+/** top **/
+.evideo.overlay-content .right .top {
+    display: block;
+    margin-top: 8px;
+}
+/*** title ***/
+.evideo.overlay-content .right .top .title span {
+    color: #fff;
+}
+
+.evideo.overlay-content .right .top .title a span,
+.evideo.overlay-content .right .top .title a:link span,
+.evideo.overlay-content .right .top .title a:visited span,
+.evideo.overlay-content .right .top .title a:active span {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    display: inline;
+}
+
+.evideo.overlay-content .right .top .title a:hover { text-decoration: none; }
+
+.evideo.overlay-content .right .top .title a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+
+/** middle **/
+.evideo.overlay-content .right .mid {
+    margin: 10px 0;
+}
+
+/*** genre ***/
+.evideo.overlay-content .right .mid .genre,
+.evideo.overlay-content .right .mid .creator,
+.evideo.overlay-content .right .mid .rating,
+.evideo.overlay-content .right .mid .released {
+    text-transform: none;
+    font-size: 100%;
+    color: #000;
+    font-family: "Trebuchet MS",sans-serif;
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 2px 0;
+    overflow: hidden;
+}
+
+.evideo.overlay-content .right .mid .genre span.label {
+    color: #fff;
+    font-weight: normal;
+}
+
+.evideo.overlay-content .right .mid .genre a, 
+.evideo.overlay-content .right .mid .genre a:link,
+.evideo.overlay-content .right .mid .genre a:visited,
+.evideo.overlay-content .right .mid .genre a:active {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.evideo.overlay-content .right .mid .genre a:hover {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}

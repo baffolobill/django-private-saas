@@ -1,0 +1,57 @@
+{% load i18n %}
+
+<!-- usernav -->
+{% if user.is_authenticated %}
+<div class="usernav-dropdown clearfix">
+  <div class="usernav-label-button">
+    <a href="{% url profile-index %}"
+       title="{% trans "See profile" %}">{{ user.username }}</a>
+  </div>
+  <div id="usernav-expand-button"
+       class="usernav-expand-button">
+    <a href="#expand-usernav" title="expand usernav"><span></span></a>
+  </div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('#usernav-expand-button').click(function(){
+    if (jQuery(this).hasClass('active')) {
+      jQuery(this).removeClass('active');
+      jQuery('#usernav').hide();
+    } else {
+      jQuery(this).addClass('active');
+      jQuery('#usernav').show();
+    }
+
+    return false;
+  });
+
+  jQuery('body').click(function(){
+    jQuery('#usernav-expand-button').removeClass('active');
+    jQuery('#usernav').hide();
+  });
+
+});
+</script>
+<ul id="usernav" class="clearfix">
+
+  <li class="user-item clearfix">
+    <a href="{% url profile-index %}"
+       title="{% trans "See profile" %}"><span>Account</span></a>
+  </li>
+
+  <li class="user-item signout last">
+    <a class="user-item signout"
+        href="{% url profile-logout  %}"
+        title="{% trans "Sign Out" %}"><span>{% trans "Sign Out" %}</span></a>
+  </li>
+</ul>
+{% else %}
+{% comment %}
+<script type="text/javascript">
+window.location.href = '{% url index %}';
+</script>
+{% endcomment %}
+{% endif %}
+<!-- end usernav -->
+

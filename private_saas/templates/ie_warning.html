@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<link href="{{STATIC_URL}}css/ie6/ie6warning.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block iewarningcheck %}{% endblock %}
+
+{% block body %}
+<div id="ie6-warning" class="clearfix">
+  <span class="note clearfix">
+    <p>We don't support IE6 and don't optimize template under IE7 yet.</p>
+    <p>Download one of the below modern browsers and have a cup of coffee while upgrading your IE</p>
+  </span>
+  <ul>
+    <li><a class="firefox-download" href="http://www.mozilla.com/firefox/" target="_blank" title="Download Firefox">&nbsp;</a></li>
+    <li><a class="chrome-download" href="http://www.google.com/chrome" target="_blank" title="Download Chrome">&nbsp;</a></li>
+    <li><a class="safari-download" href="http://www.apple.com/safari/download/" target="_blank" title="Download Safari">&nbsp;</a></li>
+    <li><a class="opera-download" href="http://www.opera.com/download/" target="_blank" title="Download Opera">&nbsp;</a></li>
+    <li><a class="ie-download" href="http://www.microsoft.com/windows/Internet-explorer/default.aspx" target="_blank" title="Download Internet Explorer 8 NOW!">&nbsp;</a></li>
+  </ul>
+</div>
+{% endblock %}

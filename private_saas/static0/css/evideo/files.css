@@ -1,0 +1,189 @@
+.episodes { margin: 20px 0 0; padding: 0; }
+.episodes .textAlignCenter { text-align: center; }
+
+/* columns */
+.episodes ul.columns 
+{ 
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    display: block;
+    clear: both;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #888;
+}
+.episodes ul.columns li
+{
+    float: left;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.episodes ul.columns li a,
+.episodes ul.columns li a:active,
+.episodes ul.columns li a:visited,
+.episodes ul.columns li a:link 
+{
+    display: block;
+    padding: 2px;
+}
+
+.episodes ul.columns li a:hover { text-decoration: none; }
+
+.episodes ul.columns li a span,
+.episodes ul.columns li a:active span,
+.episodes ul.columns li a:visited span,
+.episodes ul.columns li a:link span 
+{
+    font-size: 108%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.episodes ul.columns li a:hover span 
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+/* episode */
+.episodes ul.episode 
+{
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    display: block;
+    clear: both;
+    background: #666;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+.episodes ul.episode.last {}
+
+.episodes ul.episode > li 
+{
+    float: left;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    height: 29px;
+    line-height: 29px;
+    vertical-align: middle;
+    color: #fff;
+/*    overflow: hidden;*/
+    position: relative;
+}
+.episodes ul.episode li.cell-price { overflow: visible; }
+
+.episodes ul.episode li a,
+.episodes ul.episode li a:link,
+.episodes ul.episode li a:visited,
+.episodes ul.episode li a:active {}
+
+.episodes ul.episode li a:hover { text-decoration: none; }
+
+.episodes ul.episode li a span,
+.episodes ul.episode li a:link span,
+.episodes ul.episode li a:visited span,
+.episodes ul.episode li a:active span 
+{
+    color: #fff;
+}
+
+.episodes ul.episode li a:hover span {}
+
+.episodes ul.episode li a span.less {}
+
+.episodes ul.episode li a.more {
+    display: block;
+    padding: 6px 0 0;
+    float: right;
+
+}
+
+.episodes ul.episode li a.more span, 
+.episodes ul.episode li a.more:active span,
+.episodes ul.episode li a.more:visited span,
+.episodes ul.episode li a.more:link span
+{
+/*    margin-top: 6px;
+    float: right;*/
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(./ui-icons_ffffff_256x240.png) no-repeat -16px -144px;
+}
+.episodes ul.episode li a.more:hover span {
+    background: url(./ui-icons_0073ea_256x240.png) no-repeat -16px -144px;
+}
+
+.episodes ul.episode.hover { background: #999; }
+.episodes ul.episode li:first-child a span.play-video-button { display: none; }
+.episodes ul.episode.hover li:first-child a,
+.episodes ul.episode.hover li:first-child a span.play-video-button
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.episodes ul.episode.hover li:first-child a span.play-video-button
+{
+    background: url(../../images/play_button_24x24.png) no-repeat center center;
+}
+.episodes ul.episode.hover li:first-child a span.order { display: none; }
+
+.episodes ul.episode li.cell-title { cursor: pointer; }
+
+/* scroll content */
+.vertical-scroll.scroll-wrapper
+{
+    position: relative;
+
+}
+.scroll-wrapper .scroll-pane
+{
+/*    overflow: hidden;*/
+    background: #666;
+}
+.scroll-wrapper .scroll-pane .scroll-content
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.scroll-wrapper .scrollbar 
+{
+    height: 119px;
+    width: 6px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    display: none;
+}
+.scroll-wrapper .scrollbar .scroll-bg
+{
+    background: #444;
+    width: 6px;
+    height: 100%;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    z-index: 50;
+}
+.scroll-wrapper .scrollbar .scroller
+{
+    background: #C3532D;
+    width: 6px;
+    height: 20px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    z-index: 51;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}

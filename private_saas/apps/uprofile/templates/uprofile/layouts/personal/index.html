@@ -1,0 +1,46 @@
+{% load i18n %}
+{% load invitation %}
+{% load payment %}
+
+<div id="profile__me" class="profile__block">
+    <div class="profile__me__wrap wrap">
+        <h2 class="title">{% trans 'Personal' %}</h2>
+        <ul class="profile__me__general">
+            <li class="first col width-30">
+                <span class="key">{% trans 'Your email' %}:</span>
+                <span class="val">{{user.email}}</span>
+            </li>
+            <li class="col width-30">
+                <span class="key">{% trans 'Invited by' %}:</span>
+                <span class="val">{% invited_by %}</span>
+            </li>
+            <li class="last col width-40">
+                <span class="key">{% trans 'Paid days' %}:</span>
+                <span class="val">{% paid_days %}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="profile__me__separator"></div>
+    <div class="profile__me__wrap wrap">
+        <div class="col width-50">
+            <h2 class="title">{% trans 'Change password' %}</h2>
+
+            {% include 'uprofile/layouts/personal/change_password_form.html' %}
+        </div>
+        <div class="col width-50">
+            <h2 class="title">{% trans 'Invites' %}</h2>
+            <div class="fm__help">When paying by registered users according to the codes on your account will be credited with a certain number of bonus days.</div>
+
+            {% for ui in user.invitations.all %}
+                {% if ui.valid %}
+                <div class="fm__row">
+                    <h3>{{ui.key}}</h3>
+                    <p>{% trans 'estimate' %}: {{ui.estimate}}</p>
+                </div>
+                {% endif %}
+            {% empty %}
+                <div class="fm__help">{% trans 'No invitation.' %}</div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

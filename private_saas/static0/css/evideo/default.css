@@ -1,0 +1,571 @@
+#mainnav-bg
+{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #3c3c3c;
+}
+#top-toolbar-bg {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 31px;
+    width: 100%;
+    background: transparent url(../../images/mainnav_shadow_repeat.png) repeat-x top left;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+#container
+{
+    background: #FCFCFC;
+}
+.simpleTree { width: 230px !important; }
+
+#wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+#footer div.main {
+/*    background-color: #2d2d2d !important;
+    background-image: none !important;*/
+}
+
+#evideo-block { margin:0; padding:0 10px; }
+
+/*\ evideo top section \*/
+#evideo-block > .top { margin-top: 20px; }
+
+/* section title */
+.section-title.title,
+.evideo-block .top .title {
+    font-size: 170%;
+    font-weight: bold;
+    float: left;
+}
+
+.section-title.title {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+.section-title.title span {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title.title span.highlight 
+{
+    float: none;
+    display: inline;
+    color: #902a90;
+}
+
+.section-title.title span.separator {
+    margin: 0 5px;
+    font-size: 95%;
+    padding: 2px 0 0;
+}
+.section-title.title a,
+.section-title.title a:link,
+.section-title.title a:visited,
+.section-title.title a:active {
+    display: block;
+    float: left;
+    color: #000;
+    border-bottom: 1px dashed #000;
+}
+.section-title.title a:hover {
+    text-decoration: none;
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+/* showed pages (i mean it is '1-20 from 60') */
+#evideo-block .top .pages-showed {
+    color: #aaa;
+    font-size: 95%;
+    margin: 0 0 0 30px;
+    padding: 4px 0 0;
+    float: left;
+}
+#evideo-block .top .pages-showed .showed {}
+#evideo-block .top .pages-showed .showed-from { color: #777; }
+#evideo-block .top .pages-showed .total-pages {}
+
+/* filter */
+#evideo-block .top .filter {
+    float: right;
+    margin-right: 30px;
+}
+
+
+/*\ evideo middle section \*/
+#evideo-block > .main > .mid,
+#evideo-block > .mid { margin: 30px 0; padding: 0; }
+
+/*\ evideo block \*/
+.evideo {
+    margin: 0 21px 25px 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+.evideo.last-item {
+    margin: 0;
+}
+
+.evideo .main {}
+
+.evideo .left,
+.evideo .right {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 130px;
+    position: relative;    
+}
+
+/* left */
+.evideo .left {
+    width: 100px;
+}
+.evideo .left .preview-image img {
+/*    width: 110px;*/
+    height: 130px;
+}
+
+.evideo .left a.preview-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    background: #3e5cbf;
+}
+
+.evideo .left a.preview-button span {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: url(./ui-icons_ffffff_256x240.png) no-repeat -16px -144px;
+}
+.evideo .left a.preview-button:hover span {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(./ui-icons_0073ea_256x240.png) no-repeat -16px -144px;
+}
+
+
+/* right */
+.evideo .right {
+    width: 180px;
+    padding-left: 8px;
+    padding-right: 4px;
+    overflow: visible;
+}
+.evideo.overlay-content .right {
+    width: 400px;
+    padding-left: 16px;
+}
+
+.evideo .right .top,
+.evideo .right .mid,
+.evideo .right .bot {
+    padding: 0;
+    margin: 0;
+}
+
+/** top **/
+.evideo .right .top {
+    margin-top: 2px;
+}
+/*** title ***/
+.evideo .right .top h3 { font-size: 100%; }
+
+.evideo .right .top .title span {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 120%;
+    font-family: Aria,"Trebuchet MS",sans-serif;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.evideo.overlay-content .right .top .title span {
+    color: #fff;
+    font-size: 110%;
+}
+
+.evideo .right .top .title a span,
+.evideo .right .top .title a:link span,
+.evideo .right .top .title a:visited span,
+.evideo .right .top .title a:active span {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+.evideo.overlay-content .right .top .title a span,
+.evideo.overlay-content .right .top .title a:link span,
+.evideo.overlay-content .right .top .title a:visited span,
+.evideo.overlay-content .right .top .title a:active span {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed #fff;
+}
+
+.evideo .right .top .title a:hover { text-decoration: none; }
+.evideo .right .top .title a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+.evideo.overlay-content .right .top .title a:hover { text-decoration: none; }
+.evideo.overlay-content .right .top .title a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+
+/** middle **/
+#evideo-block .evideo .right .mid {
+    margin: 8px 0;
+}
+.evideo.overlay-content .right .mid {
+    margin: 10px 0;
+}
+
+/*** genre ***/
+.evideo.overlay-content .right .mid .genre,
+.evideo.overlay-content .right .mid .creator,
+.evideo.overlay-content .right .mid .rating,
+.evideo.overlay-content .right .mid .released,
+.evideo .right .mid .genre,
+.evideo .right .mid .creator,
+.evideo .right .mid .rating,
+.evideo .right .mid .released {
+    text-transform: none;
+    font-size: 100%;
+    color: #000;
+    font-family: "Trebuchet MS",sans-serif;
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 2px 0;
+    overflow: hidden;
+}
+
+.evideo .right .mid .genre span.label {
+    float: left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.evideo.overlay-content .right .mid .genre span.label {
+    color: #fff;
+    font-weight: normal;
+}
+
+.evideo .right .mid .genre span.separator {
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 2px;
+}
+
+.evideo .right .mid .genre a, 
+.evideo .right .mid .genre a:link,
+.evideo .right .mid .genre a:visited,
+.evideo .right .mid .genre a:active,
+.evideo .right .mid .creator a,
+.evideo .right .mid .creator a:link,
+.evideo .right .mid .creator a:active,
+.evideo .right .mid .creator a:visited {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.evideo.overlay-content .right .mid .genre a, 
+.evideo.overlay-content .right .mid .genre a:link,
+.evideo.overlay-content .right .mid .genre a:visited,
+.evideo.overlay-content .right .mid .genre a:active {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+.evideo.overlay-content .right .mid .released a span, 
+.evideo.overlay-content .right .mid .released a:link span,
+.evideo.overlay-content .right .mid .released a:visited span,
+.evideo.overlay-content .right .mid .released a:active span {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.evideo .right .mid .genre a:hover,
+.evideo .right .mid .creator a:hover {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+.evideo.overlay-content .right .mid .genre a:hover,
+.evideo.overlay-content .right .mid .released a:hover {
+    text-decoration: none;
+}
+.evideo.overlay-content .right .mid .genre a:hover span,
+.evideo.overlay-content .right .mid .released a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+/*** released ***/
+.evideo .right .mid .released { text-transform: none; }
+.evideo .right .mid .released span.label {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #fff;
+}
+.evideo .right .mid .released a.value,
+.evideo .right .mid .released span.value {
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-weight: normal;
+    color: #fff;
+}
+
+/*** creator ***/
+.evideo .right .mid .creator {}
+
+.evideo .right .mid .creator span.label {
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 0;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.evideo .right .mid .creator a,
+.evideo .right .mid .creator a:link,
+.evideo .right .mid .creator a:active,
+.evideo .right .mid .creator a:visited {}
+
+.evideo .right .mid .creator a:hover {}
+
+
+/*** rating ***/
+.evideo .right .mid .rating {}
+
+.evideo .right .mid .rating span.label {
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 0;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.evideo .right .mid .rating a,
+.evideo .right .mid .rating a:hover,
+.evideo .right .mid .rating a:visited,
+.evideo .right .mid .rating a:link,
+.evideo .right .mid .rating a:active { float: left; }
+
+.evideo .right .mid .rating a span.stars {
+    width: 58px;
+    height: 10px;
+    border: none;
+    display: block;
+    margin-top: 2px;
+}
+.evideo .right .mid .rating a span.rate0 {
+    background: url(./stars_0x5_58x10_blue.png) no-repeat 0 0;
+}
+.evideo .right .mid .rating a span.rate1 {
+    background: url(./stars_1x5_58x10_blue.png) no-repeat 0 0;
+}
+.evideo .right .mid .rating a span.rate2 {
+    background: url(./stars_2x5_58x10_blue.png) no-repeat 0 0;
+}
+.evideo .right .mid .rating a span.rate3 {
+    background: url(./stars_3x5_58x10_blue.png) no-repeat 0 0;
+}
+.evideo .right .mid .rating a span.rate4 {
+    background: url(./stars_4x5_58x10_blue.png) no-repeat 0 0;
+}
+.evideo .right .mid .rating a span.rate5 {
+    background: url(./stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+
+.evideo .right .mid .rating span.votes {
+    float: left;
+    margin: 1px 0 0 15px;
+    padding: 0;
+    color: #aaa;
+    font-weight: normal;
+    font-size: 90%;
+}
+.evideo .right .mid .rating span.votes span.value,
+.evideo .right .mid .rating span.votes span.label {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.evideo .right .mid .rating span.votes span.label {
+    margin-left: 5px;
+}
+
+/** bottom **/
+.evideo .right .bot {}
+
+/*** operations ***/
+.evideo .right .bot .operations {}
+.evideo .right .bot .operations .item {}
+
+
+/*\ overlay \*/
+/*
+.evideoOverlay {
+    margin: 0; 
+    padding: 0; 
+    width: 660px;
+    min-height: 100px;
+    position: relative;
+    cursor: default;
+    display: none;
+}
+.evideoOverlay .main {
+    background: url(overlay_corners.png) no-repeat top right;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+}
+
+.evideoOverlay .main .t {
+    display: block;
+    width: 10px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: -10px;
+    background: url(overlay_corners.png) no-repeat top left;
+    position: absolute;    
+}
+
+.evideoOverlay .main .content {
+    color: #fff;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px 0 0;
+    margin: 0;
+    text-align: left;
+}
+
+.evideoOverlay .b, .evideoOverlay .b div { height: 10px; margin: 0; padding: 0; }
+
+.evideoOverlay .b {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: url(overlay_corners.png) no-repeat bottom right;
+}
+.evideoOverlay .b div {
+    display: block;
+    width: 10px;
+    position: relative;
+    margin-left: -10px;
+    background: url(overlay_corners.png) no-repeat bottom left;
+}
+
+.evideoOverlay .close-button {
+    background: url(close_button_ffffff.png) no-repeat top left;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -3px;
+    z-index: 1002;
+}
+.evideoOverlay a.close-button:hover {
+    background: url(close_button_cccccc.png) no-repeat top left;
+}
+*/
+
+/* some overlay content */
+.evideo.overlay-content { margin: 0; padding: 0; }
+.evideo.overlay-content .main { margin: 0; padding: 0; }
+
+div.link-to-page {
+    margin: 20px 0 0;
+    clear: both;
+    float: left;
+    padding: 0;
+}
+.link-to-page a span,
+.link-to-page a:link span,
+.link-to-page a:active span,
+.link-to-page a:visited span {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.link-to-page a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+.evideoOverlay .episodes {
+    margin: 20px 0 0;
+    padding: 0;
+    clear: both;
+    float: left;
+    width: 100% !important;
+}
+div.episodes table {
+    width: 100%;
+    border: 1px solid #fff;
+}
+div.episodes table td,
+div.episodes table th {
+    border: 1px solid #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

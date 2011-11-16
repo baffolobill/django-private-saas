@@ -1,0 +1,31 @@
+ul.cp-menu,
+ul.cp-menu ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+ul.cp-menu li {
+    list-style: none;
+    list-style-type: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+ul.cp-menu li a {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+ul.cp-menu ul {
+    margin-left: 14px;
+    margin-bottom: 10px;
+}
+ul.cp-menu ul.last {
+    margin-bottom: 0;
+}
+ul.cp-menu li li {}
+ul.cp-menu li li a {
+    font-weight: normal;
+}

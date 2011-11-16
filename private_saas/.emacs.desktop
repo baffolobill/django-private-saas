@@ -1,0 +1,72 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Jul 27 00:19:33 2011
+;; Desktop file format version 206
+;; Emacs version 22.1.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("Categories"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/opt/webapps/cgswap.com/src/cgswap_com/cgswap_com/apps/models3d/templates/models3d/catalog.html"
+  "catalog.html"
+  'html-mode
+  nil
+  319
+  '(217 t)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/opt/webapps/cgswap.com/src/cgswap_com/cgswap_com/apps/models3d/categories.py"
+  "categories.py"
+  'python-mode
+  nil
+  1700
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/opt/webapps/cgswap.com/src/cgswap_com/cgswap_com/apps/models3d/views.py"
+  "views.py"
+  'python-mode
+  nil
+  10686
+  '(9010 t)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/opt/webapps/cgswap.com/src/cgswap_com/cgswap_com/apps/models3d/templatetags/model3d.py"
+  "model3d.py"
+  'python-mode
+  nil
+  18950
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/opt/webapps/cgswap.com/src/cgswap_com/cgswap_com/conf/settings.py"
+  "settings.py"
+  'python-mode
+  nil
+  2512
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+

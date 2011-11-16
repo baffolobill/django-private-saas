@@ -1,0 +1,109 @@
+/*\ overlay \*/
+.evideoOverlay {
+    margin: 0; 
+    padding: 0; 
+    width: 660px; /*  -padding */
+    min-height: 100px;
+    height: 490px; /**/
+    position: relative;
+    cursor: default;
+    display: none;
+}
+.evideoOverlay .main {
+    background: url(overlay_corners_3c3c3c.png) no-repeat top right;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+}
+.evideoOverlay > .main {
+/*    width: 620px;
+    height: 440px;*/
+}
+
+.evideoOverlay .main .t {
+    display: block;
+    width: 10px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: -10px;
+    background: url(overlay_corners_3c3c3c.png) no-repeat top left;
+    position: absolute;    
+}
+
+.evideoOverlay .main .content {
+    color: #fff;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px 0 0;
+    margin: 0;
+    text-align: left;
+}
+
+.evideoOverlay .b, .evideoOverlay .b div { height: 10px; margin: 0; padding: 0; }
+
+.evideoOverlay .b {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: url(overlay_corners_3c3c3c.png) no-repeat bottom right;
+}
+.evideoOverlay .b div {
+    display: block;
+    width: 10px;
+    position: relative;
+    margin-left: -10px;
+    background: url(overlay_corners_3c3c3c.png) no-repeat bottom left;
+}
+
+.evideoOverlay .close-button {
+    background: url(close_button_ffffff.png) no-repeat top left;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -3px;
+    z-index: 1002;
+}
+.evideoOverlay a.close-button:hover {
+    background: url(close_button_cccccc.png) no-repeat top left;
+}
+
+
+/* some overlay content */
+.evideo.overlay-content { margin: 0; padding: 0; }
+.evideo.overlay-content .main { margin: 0; padding: 0; }
+
+div.link-to-page {
+    margin: 20px 0 0;
+    clear: both;
+    float: left;
+    padding: 0;
+}
+.link-to-page a span,
+.link-to-page a:link span,
+.link-to-page a:active span,
+.link-to-page a:visited span {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.link-to-page a:hover span {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+.evideoOverlay .episodes {
+    margin: 20px 0 0;
+    padding: 0;
+    clear: both;
+    float: left;
+    width: 100% !important;
+}

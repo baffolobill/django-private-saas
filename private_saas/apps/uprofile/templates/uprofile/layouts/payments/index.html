@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load subscription_tags %}
+
+<div id="profile__payments" class="profile__block no-display">
+    <h2 class="title">{% trans 'Payments' %}</h2>
+
+    <div class="wrap clearfix">
+        <div class="col width-50">
+            <form action="{% url profile-payment-payform %}" method="POST">
+                {% csrf_token %}
+                <div class="fm__row">
+                    <label for="payment__period">{% trans 'Period' %}</label><br/>
+                    <select size="1" name="payment__period" id="payment__period"
+                        onchange="jQuery('#payment__total').html(jQuery('#payment__period :selected').attr('price'));">
+                        {% get_subscription_options %}
+                    </select>
+                    <span class="payment__total__label"> = <span id="payment__total"></span></span>
+                    <script type='text/javascript'>
+                    jQuery(document).ready(function(){
+                        jQuery('#payment__total').html(jQuery('#payment__period :selected').attr('price'));
+                    });
+                    </script>
+                </div>
+                <div class="fm__hspacer"></div>
+
+                <div class="fm__row">
+                    <input type="button" value="{% trans 'Pay Now' %}" onclick="return UProfile.pay(this);" />
+                </div>
+            </form>
+        </div>
+        <div class="col width-50">
+            <b>logo</b>
+        </div>
+    </div>
+
+</div>

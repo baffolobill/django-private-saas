@@ -1,0 +1,86 @@
+#logo
+{
+    width: 100px;
+    height: 40px;
+    background: url(../../images/logo_for_white_bg.png) no-repeat;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#content
+{
+    float: left;
+    width: 590px;
+    margin-left: 10px;
+}
+
+div.search-form {
+    padding: 10px 0 20px;
+    margin: 0 auto;
+    width: 480px;
+    overflow: hidden;
+}
+
+div.search-form div.search-left {
+    position: relative;
+    width: 429px;
+    height: 44px;
+    float: left;
+}
+
+div.search-form div.search-right { float: left; display: none; }
+
+input#search-field {
+    width: 429px;
+    height: 20px;
+    line-height: 1;
+/*    background: transparent url(../../images/search_field_bg.png) no-repeat scroll top left;*/
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 4px 9px 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+input#search-button {
+    height: 23px !important;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin: 2px 0 1px 4px;
+    padding: 0 10px;
+}
+
+div#search-example {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    color: #000;
+    font-size: 90%;
+}
+div#search-example a,
+div#search-example a:focus,
+div#search-example a:visited,
+div#search-example a:link,
+div#search-example a:active,
+div#advanced-search-button a,
+div#advanced-search-button a:focus,
+div#advanced-search-button a:visited,
+div#advanced-search-button a:link,
+div#advanced-search-button a:active { color: #3c3c3c; text-decoration: underline; }
+
+div#search-example a:hover,
+div#advanced-search-button a:hover { text-decoration: none; }
+
+div#advanced-search-button {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    color: #000;
+    font-size: 100%;
+}

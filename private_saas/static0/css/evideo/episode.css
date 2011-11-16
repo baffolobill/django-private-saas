@@ -1,0 +1,614 @@
+#mainbody {
+    margin-left: 0px !important;
+}
+
+#episode-block
+{
+    margin: 0;
+    padding: 0 10px;
+    clear: both;
+    float: left;
+}
+#episode-block .mid
+{
+    margin-top: 20px;
+}
+
+#episode-block .module
+{
+    float: left;
+    width: 200px;
+    clear: both;
+/*    border: 1px solid;*/
+}
+
+#episode-body
+{
+    padding: 0 0 0 20px;
+    width: 740px;
+    float: right;
+}
+#episode-body .main { margin-left: 20px; }
+
+/** preview image **/
+.module .preview-image 
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.module .preview-image img 
+{
+/*    width: 110px;*/
+    max-width: 150px;
+    max-height: 130px;
+}
+
+/** files **/
+.module .files 
+{
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.module .files .label
+{
+
+}
+.module .files .value {}
+.module .files .value span { display: block; margin: 0; padding: 0; line-height: 1.2; }
+.module .files ul.value 
+{
+    display: block;
+    list-style: none;
+    background: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.module .files ul.value li 
+{
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 3px 0;
+    background: none;
+}
+.module .files ul.value li.item 
+{
+    margin-left: 5px;
+}
+.module .files ul.value li.item.hidden {display:none !important;}
+.module .files ul.value li.item span.order { float: left; margin-right: 3px; }
+
+.module .files ul.value li.item a,
+.module .files ul.value li.item a:link,
+.module .files ul.value li.item a:visited,
+.module .files ul.value li.item a:active,
+.module .files ul.value li.ft a,
+.module .files ul.value li.ft a:link,
+.module .files ul.value li.ft a:visited,
+.module .files ul.value li.ft a:active  { display: block; float: left; margin: 0; padding: 0; }
+
+.module .files ul.value li.ft a:hover,
+.module .files ul.value li.item a:hover { text-decoration: none; }
+
+.module .files ul.value li.item a span,
+.module .files ul.value li.item a:link span,
+.module .files ul.value li.item a:visited span,
+.module .files ul.value li.item a:active span,
+.module .files ul.value li.ft a span,
+.module .files ul.value li.ft a:link span,
+.module .files ul.value li.ft a:visited span,
+.module .files ul.value li.ft a:active span
+{
+    color: #000;
+    border-bottom: 1px dashed #000;
+}
+
+.module .files ul.value li.ft a:hover span,
+.module .files ul.value li.item a:hover span 
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+.module .files ul.value li.ft { padding: 8px 0 0; }
+.module .files ul.value li.ft a {}
+.module .files ul.value li.ft a.zip-button {}
+.module .files ul.value li.ft a.more-button { float:right; }
+
+/*** empty message ***/
+.module .files ul.value li.empty 
+{
+    margin-left: 10px;
+}
+.module .files ul.value li.empty span {}
+
+
+/** operations **/
+.module .operations
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+
+/** attributes **/
+.module .attributes
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.module .attributes .genre,
+.module .attributes .released,
+.module .attributes .duration,
+.module .attributes .language,
+.module .attributes .filesize,
+.module .attributes .copyass
+{
+    text-transform: none;
+    font-size: 95%;
+    color: #000;
+    font-family: "Trebuchet MS",sans-serif;
+    margin: 0;
+    padding: 2px 0;
+    overflow: hidden;
+    clear: both; 
+    display: block;    
+}
+
+.module .attributes .genre span.label,
+.module .attributes .released span.label,
+.module .attributes .duration span.label,
+.module .attributes .language span.label,
+.module .attributes .filesize span.label
+{
+    float: left;
+    margin-right: 5px;
+    padding: 0;
+    font-weight: normal !important;
+}
+
+.module .attributes .released span.value,
+.module .attributes .filesize span.value,
+.module .attributes .language span.value,
+.module .attributes .duration span.value
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal !important;
+}
+
+/** genre **/
+.module .attributes .genre {}
+.module .attributes .genre .label {}
+.module .attributes .genre .value {}
+
+.module .attributes .genre span.separator 
+{
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 2px;
+}
+
+.module .attributes .genre a, 
+.module .attributes .genre a:link,
+.module .attributes .genre a:visited,
+.module .attributes .genre a:active,
+
+.module .attributes .released a, 
+.module .attributes .released a:link,
+.module .attributes .released a:visited,
+.module .attributes .released a:active,
+
+.module .attributes .language a, 
+.module .attributes .language a:link,
+.module .attributes .language a:visited,
+.module .attributes .language a:active 
+{
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.module .attributes .genre a span, 
+.module .attributes .genre a:link span,
+.module .attributes .genre a:visited span,
+.module .attributes .genre a:active span,
+
+.module .attributes .released a span, 
+.module .attributes .released a:link span,
+.module .attributes .released a:visited span,
+.module .attributes .released a:active span,
+
+.module .attributes .language a span, 
+.module .attributes .language a:link span,
+.module .attributes .language a:visited span,
+.module .attributes .language a:active span
+{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+.module .attributes .genre a:hover,
+.module .attributes .released a:hover,
+.module .attributes .language a:hover { text-decoration: none; }
+
+.module .attributes .genre a:hover span,
+.module .attributes .released a:hover span,
+.module .attributes .language a:hover span
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+
+/** released **/
+.module .attributes .released {}
+.module .attributes .released span.label {}
+.module .attributes .released span.value {}
+
+/** filesize **/
+.module .attributes .filesize {}
+.module .attributes .filesize span.label {}
+.module .attributes .filesize span.value {}
+
+/** duration **/
+.module .attributes .duration {}
+.module .attributes .duration span.label {}
+.module .attributes .duration span.value {}
+
+/** language **/
+.module .attributes .language {}
+.module .attributes .language span.label {}
+.module .attributes .language span.value {}
+.module .attributes .language .languages { display: none; }
+
+
+/* description */
+#episode-body .description { margin: 0; padding: 0; }
+#episode-body .description .label {
+    font-size: 130%;
+    font-weight: bold;
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0 0 6px;
+    padding: 0;
+}
+#episode-body .description .value {
+    float: left;
+    clear: both;
+}
+#episode-body .description div.value span {}
+#episode-body .description div.value span.intro-text 
+{
+    float: left;
+    clear: both;
+}
+#episode-body .description div.value span.more-text {display:none;}
+#episode-body .description div.value a.more-button 
+{
+    display: block;
+    float: right;
+    clear: both;
+    text-decoration: none;
+}
+#episode-body .description div.value a.more-button span,
+#episode-body .description div.value a.more-button:active span,
+#episode-body .description div.value a.more-button:visited span,
+#episode-body .description div.value a.more-button:link span
+{
+    color: #000;
+    border-bottom: 1px dashed #000;
+}
+#episode-body .description div.value a.more-button:hover span
+{
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+#episode-body .description div.value span.separator {}
+
+
+/* video */
+#episode-block .player {
+    margin: 30px 0 0;
+    padding: 0;
+    width: 100%;
+}
+#episode-block .player .video-js-box { margin: 0 auto; }
+
+
+/* another episodes */
+.episodes 
+{
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.episodes ul.episode.selected 
+{ 
+    background: #2c4bae; 
+}
+
+.episodes ul.episode.selected,
+.episodes ul.episode.selected li,
+.episodes ul.episode.selected li a
+{
+    cursor: default !important;
+}
+
+/* summary */
+.episodes div.summary 
+{ 
+    margin: 0;
+    padding: 2px 0;
+    width: 100%; 
+    background: #888;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+}
+
+
+/* customer rating */
+.customer-ratings {
+    text-transform: none;
+    margin: 30px 0 0;
+    padding: 0;
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+/** title **/
+.customer-ratings .title
+{
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: none;
+}
+.customer-ratings h3.title
+{
+    font-size: 100%;
+}
+.customer-ratings .title span 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+}
+
+/** average rating **/
+.customer-ratings .rating
+{
+    cursor: pointer;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.customer-ratings .rating span.icon
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: url(ui-icons_0073ea_256x240.png) no-repeat;    
+}
+.customer-ratings .rating span.icon.expand
+{
+    background-position: -32px -16px;
+}
+.customer-ratings .rating span.icon.collapse 
+{
+    background-position: -64px -16px;
+}
+
+.customer-ratings .rating span.label,
+.customer-ratings .rating span.votes span.value,
+.customer-ratings .rating span.votes span.label
+{
+    font-size: 120%;
+    color: #000;
+}
+
+.customer-ratings .rating span.label {
+    text-transform: none;
+    float: left;
+    margin: 0 0 0 2px;
+    padding: 0;
+    font-weight: normal;
+}
+
+.customer-ratings .rating span.stars {
+    width: 58px;
+    height: 10px;
+    border: none;
+    display: block;
+    margin: 3px 0 0 5px;
+    padding: 0;
+    float: left;
+}
+.customer-ratings .rating span.rate0 {
+    background: url(./stars_0x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate1 {
+    background: url(./stars_1x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate2 {
+    background: url(./stars_2x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate3 {
+    background: url(./stars_3x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate4 {
+    background: url(./stars_4x5_58x10_blue.png) no-repeat 0 0;
+}
+.customer-ratings .rating span.rate5 {
+    background: url(./stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+
+.customer-ratings .rating span.votes {
+    float: left;
+    margin: 0 0 0 8px;
+    padding: 0;
+    font-weight: normal;
+}
+.customer-ratings .rating span.votes span.value,
+.customer-ratings .rating span.votes span.label {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+}
+.customer-ratings .rating span.votes span.label {
+    margin-left: 5px;
+}
+
+/** customer rating explanation **/
+.rating-explanation
+{
+    display: none;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.rating-explanation table,
+.rating-explanation table tr,
+.rating-explanation table tr td,
+.rating-explanation table tr th
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rating-explanation table { margin: 8px 0 0 10px; }
+
+.rating-explanation table tr td { padding-right: 6px; }
+
+.rating-explanation span.stars
+{
+    float: right;
+    width: 58px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.rating-explanation span.rate1
+{
+    width: 10px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate2
+{
+    width: 22px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate3
+{
+    width: 34px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate4
+{
+    width: 46px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+.rating-explanation span.rate5
+{
+    width: 58px;
+    background: url(stars_5x5_58x10_blue.png) no-repeat 0 0;
+}
+
+.rating-explanation .percent
+{
+    width: 80px;
+    background: #222;
+    height: 10px;
+    display: block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.rating-explanation .percent .fill
+{
+    float: left;
+    height: 10px;
+    background: #a830cf;
+    border-radius: 3px;
+    -moz-border-radius: 3px;    
+}
+
+
+/* rate */
+.customer-ratings .rate
+{
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.customer-ratings .rate .label
+{
+    font-size: 120%;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-weight: normal;
+}
+
+.customer-ratings .rate span.value
+{
+    margin-left: 6px;
+    display: block;
+    float: left;
+}
+
+
+/* customer reviews */
+/* customer rating */
+.customer-reviews {
+    text-transform: none;
+    margin: 50px 0 0;
+    padding: 0;
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+/** title **/
+.customer-reviews .title
+{
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: none;
+}
+
+.customer-reviews .title span 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+}

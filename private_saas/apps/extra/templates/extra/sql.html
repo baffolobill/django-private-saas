@@ -1,0 +1,8 @@
+{% load i18n %}
+
+<div class="clearfix" style="float:left;clear:both;border-top: 2px solid #3c3c3c;">
+	<p><b>Total: {{sql_queries|length}}</b></p>
+	{% for q in sql_queries %}
+	<p>{{q.time}} - {{q.sql}}</p>
+	{% endfor %}
+</div>

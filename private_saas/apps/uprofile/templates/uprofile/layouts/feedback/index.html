@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<div id="profile__feedback" class="profile__block no-display">
+    <h2 class="title">{% trans 'Feedback' %}</h2>
+
+    <div class="fm clearfix">
+        <div class="fm__help">Here you may tell us about your problems (not personal).</div>
+
+        <div class="fm__hspacer"></div>
+
+        <form action="{% url profile-feedback-form %}" method="post">
+            {% csrf_token %}
+            <div class="fm__row">
+                <label for="fb__field__message">{% trans 'Your message' %}</label>
+            </div>
+            <div class="fm__row">
+                <textarea id="fb__field__message" cols="80" rows="5" name="fb__message"></textarea>
+            </div>
+            <div class="fm__row">
+                <input type="button" value="{% trans 'Submit' %}" onclick="return UProfile.feedback(this);" />
+            </div>
+        </form>
+    </div>
+
+    <div class="fm__hspacer"></div>
+
+    <div id="feedback_wrapper" class="clearfix fb__items">
+        {% for fb in user.feedback_set.all %}
+        <div class="fb__item {% cycle 'odd' 'even' %} clearfix">
+            <div class="fb__item__message">({{fb.created|date:"Y-m-d"}}) {{fb.message}}</div>
+            {% if fb.answer %}
+                <div class="fb__item__answer">{{fb.answer}}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% comment %}
+    <script type="text/javascript">
+    jQuery(document).ready(function(){ Feedback.load('#feedback_wrapper'); });
+    </script>
+    {% endcomment %}
+</div>

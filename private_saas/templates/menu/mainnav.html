@@ -1,0 +1,19 @@
+{% load i18n %}
+
+{% if menu_items %}
+<!-- mainnav -->
+<ul id="cssmenu" class="clearfix">
+{% for item in menu_items %}
+  <li class="menu-item {{item.classes}} {%if forloop.first %}first-item{%endif%} {%if forloop.last %}last-item{%endif%}">
+  {% if not item.disabled %}
+    <a class="{%if mainmenu.active == item.name %}active{%endif%} menu-item"
+        href="{{item.href}}"
+        title="{{item.title}}">{{item.label|lower}}</a>
+  {% else %}
+    <span class="disabled menu-item">{{item.label|lower}}</span>
+  {% endif %}
+  </li>
+{% endfor %}
+
+</ul>
+{% endif %}

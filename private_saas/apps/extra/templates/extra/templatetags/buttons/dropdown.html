@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<div class="dropdown clearfix">
+  <a href="#!dropdown-open-button"
+     class="dropdown-open-button"
+     onclick="return Dropdown.open(this);"
+     title="{% trans 'Open dropdown' %}">
+  {% if button_html %}
+    {{button_html}}
+  {% else %}
+    <span class="label">{{button.label}}</span>
+  {% endif %}
+    <span class="icon"></span>
+  </a>
+
+  {{items_html}}
+</div>
+

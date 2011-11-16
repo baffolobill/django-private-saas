@@ -1,0 +1,45 @@
+{% extends "base_with_mainnav.html" %}
+{% load i18n %}
+
+{% block header %}
+ {{ block.super }}
+
+ <script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.4.2.min.js"></script>
+ <script type="text/javascript" src="{{MEDIA_URL}}js/cookie.js"></script>
+{% endblock %}
+
+{% block toolbar %}
+<!-- toolbar block -->
+<div id="top-toolbar" class="wrap">
+  <div class="toolbar hortoolbar main clearfix">
+    
+    <!-- show search form button -->
+    {% if mode == 'search' %}
+    <div id="show-search-form-button" class="toolbar-button horizontal-button
+      slug-button toggle shadow" style="display:none;">
+      <a href="#"><span class="button-label">show search form button</span></a>
+    </div>
+    {% endif %}
+
+    <!-- view settings button -->
+    <div id="view-settings-button" class="toolbar-button
+      horizontal-button slug-button">
+      <a href="#"><span class="button-label">view settings button</span></a>
+    </div>
+
+    <!-- catalog mode button -->
+    <div id="catalog-mode-button" class="toolbar-button
+      horizontal-button slug-button {% ifequal mode 'catalog' %}active{%endifequal%}">
+      <a href="?mode=catalog&tmpl={{tmpl}}"><span class="button-label">catalog button</span></a>
+    </div>
+    
+    <!-- search mode button -->
+    <div id="search-mode-button" class="toolbar-button
+      horizontal-button slug-button {%ifequal mode 'search'%}active{%endifequal%}">
+      <a href="?mode=search&tmpl={{tmpl}}"><span class="button-label">search button</span></a>
+    </div>
+  </div>
+</div><!-- end toolbar block -->
+
+
+{% endblock %}

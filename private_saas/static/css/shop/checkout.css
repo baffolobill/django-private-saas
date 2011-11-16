@@ -1,0 +1,209 @@
+#navbar ul li { float: left; }
+#navbar ul li span.label { float: left; clear: both; }
+
+#checkoutprogress {
+/*    border: 1px solid #3c3c3c; */
+    padding: 3px;
+    margin: 6px 0 4px 10px;
+    float: left;
+    clear: both;
+}
+
+#checkoutprogress ul {
+    display: inline;
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
+}
+
+#checkoutprogress ul li {
+    margin-left: 0;
+    padding-left: 2px;
+    display: inline;
+    list-style: none;
+    border: none;
+}
+
+#checkoutprogress ul li:before {
+    content: "\0020 \0020 \0020 \00BB \0020";
+    display: inline;
+    list-style: none;
+}
+
+#checkoutprogress ul li.first:before {
+    content: " ";
+}
+
+#checkoutprogress li.active {
+/*    background-color: #ccc;*/
+    font-weight: bold;
+/*    padding: 0.3em 0.5em;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;*/
+}
+
+
+.left-col { float: left; }
+.right-col { float: right; }
+.width-70 { width: 70%; }
+.width-30 { width: 30%; }
+.left-col, .right-col { padding-top: 1em; }
+
+.paymentmethod-block {
+    margin: 0.8em 0 0;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    position: relative;
+    padding: 1.5em 1em 1em;
+}
+.paymentmethod-block > .label {
+    position: absolute;
+    top: -12px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #fcfcfc;
+    left: 30px;
+    padding: 0 0.4em;
+    display: block;
+}
+.paymentmethod-block #payment { float: left; clear: both;  }
+.paymentmethod-block #payment ul li { padding: 0.3em 0; }
+.paymentmethod-block > .errors { 
+     float: left; 
+     clear: both; 
+     margin: 0.3em 0;
+     padding: 0.3em 0.5em;
+     font-weight: bold;
+     width: 90%;
+     border: 1px solid red;
+     border-radius: 2px;
+     -moz-border-radius: 2px;
+     -webkit-border-radius: 2px;
+}
+.paymentmethod-block > .submit-button {
+    clear: both;
+    float: left;
+    margin: 2em 0 0;
+}
+/** moved from addressbook_dropdown.css **/
+.checkout-title {
+    padding: 0.5em 0 0.99em;
+}
+.checkout-fieldset,
+.discount-fieldset,
+.paymentmethod-fieldset,
+.addressbook-fieldset,
+.payment-fieldset {
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 0 0 1em;
+    padding: 1em;
+}
+.checkout-fieldset legend,
+.discount-fieldset legend,
+.paymentmethod-fieldset legend,
+.addressbook-fieldset legend,
+.payment-fieldset legend {
+    margin-left: 0.5em;
+    padding: 0.2em;
+    font-size: 110%;
+}
+
+.addressbook-fieldset .enter-new-address {
+    margin: 1em 0;
+}
+.addressbook-fieldset .enter-new-address a:link,
+.addressbook-fieldset .etner-new-address a:focus,
+.addressbook-fieldset .enter-new-address a:visited,
+.addressbook-fieldset .enter-new-address a:active {
+    text-decoration: none;
+    border-bottom: 1px dotted #3c3c3c;
+    padding: 0;
+}
+.addressbook-fieldset .enter-new-address a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+.addressbook-fieldset .enter-new-address a.enter-new-billing-address-button {}
+.addressbook-fieldset .enter-new-address span.enter-new-billing-address-label {display: none;}
+.addressbook-fieldset .enter-new-address a.select-billing-address-from-list { 
+    display: none; 
+    margin: 1em 0;
+    float: left;
+    clear: both;
+}
+
+.addressbook-fieldset .enter-new-address .new-address-table,
+.payment-fieldset table,
+.checkout-fieldset table {
+    display: none;
+    background: #e6e6e6;
+    border-collapse: separate;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.checkout-fieldset table,
+.payment-fieldset table.open,
+.addressbook-fieldset .enter-new-address .new-address-table.open {
+   display: table;
+}
+
+.checkout-fieldset table.with-border-spacing,
+.checkout-fieldset table.items-ordered { border-spacing: 2px 1px; background: none; }
+
+.checkout-fieldset table.with-border-spacing tr,
+.addressbook-fieldset .enter-new-address .new-address-table tr,
+.payment-fieldset table tr,
+.checkout-fieldset table tr { background: #e6e6e6; }
+
+.addressbook-fieldset .enter-new-address .new-address-table tr.even,
+.payment-fieldset table tr.even,
+.checkout-fieldset table tr.even { background-color: #ececec; }
+
+.addressbook-fieldset .enter-new-address .new-address-table tr td {}
+
+.checkout-fieldset table td.key { font-weight: bold; }
+.checkout-fieldset table td.val {}
+.checkout-fieldset table td.val.total { font-weight: bold; }
+
+.addressbook-fieldset .enter-new-address .new-address-table tr td input[type=text],
+.discount-fieldset input[type=text],
+.payment-fieldset table tr td input[type=text] {
+    border: 1px solid #d5d5d5;
+    line-height: 14px;
+    padding: 0.2em;
+    width: 300px;
+}
+
+.addressbook-fieldset .enter-new-address .new-address-table tr td.error,
+.paymentmethod-fieldset .error,
+.discount-fieldset .error,
+.payment-fieldset .error,
+.checkout-fieldset .error { color: #AD0C0C; }
+
+.addressbook-fieldset .enter-new-address .new-address-table tr td label,
+.discount-fieldset label,
+.payment-fieldset tr td label { font-size: 89%; color: #212121; }
+
+.discount-fieldset input[type=text] { border-color: #3c3c3c; }
+.discount-fieldset label { padding-right: 0.9em; }
+
+.billing-address-select-label {
+    text-decoration: none;
+    clear: both;
+    margin: 0.2em 0;
+}
+
+.submit-button {
+    float: left;
+    clear: both;
+    margin-top: 1em;
+}

@@ -1,0 +1,12 @@
+<ul id="{{items.id}}" class="clearfix {{items.classes}}">
+  {% for row in items.rows %}
+  <li class="{{row.classes}} {% if forloop.last %}last{%endif%} clearfix">
+    <a href="{{row.href}}"
+       {% if row.id %}id="{{row.id}}"{%endif%}
+       {% if row.title %}title="{{row.title}}"
+       {% for action,func in row.actions.items %}{{action}}="func"{%endfor%}
+       {% if row.classes %}class="{{row.classes}}"{%endif%}
+       ><span>{{row.label}}</span></a>
+  </li>
+  {% endfor %}
+</ul>

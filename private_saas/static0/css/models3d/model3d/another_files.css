@@ -1,0 +1,165 @@
+/*\ MODEL3D FILES \*/
+.another-files {
+    margin: 40px auto 10px;
+    width: 646px;
+}
+.another-files .summary {
+    height: 26px;
+    line-height: 26px;
+    background-color: #888;
+    color: #fff;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+.another-files dl {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+}
+.another-files dl.even {
+    margin-top: 5px;
+}
+.another-files dl.even dt,
+.another-files dl.even dd div {
+    background: #ddd;
+}
+.another-files dl.even dd.even div {
+    background: #eee;
+}
+.another-files dl dt { /* format cell width */
+    display: block;
+    float: left;
+    height: 100%;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    position: absolute;
+/*    overflow: hidden;*/
+}
+
+.another-files dl dt span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.another-files dl.cell-format-header {
+    background-color: #888;
+    color: #fff;
+    cursor: default;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+
+.another-files dl.cell-format-header dt { background: none; }
+.another-files dl.cell-format-header dt span { 
+    height: 22px; 
+    padding: 5px 0 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+.another-files dl.cell-format-header dd div.download {}
+
+.another-files dl.cell-format-header dd span {
+    font-weight: bold;
+}
+.another-files dl.cell-format-header dt span,
+.another-files dl.cell-format-header dd div {
+    cursor: default;
+    text-align: center;
+}
+.another-files dl dd {
+    margin: 0 0 0 201px;
+    padding: 0;
+    display: block;
+    clear: left;
+    position: relative;
+}
+.another-files dl dd div {
+    display: block;
+    float: left;
+    margin: 0 1px 1px 0;
+    padding: 5px 10px 0 5px;
+    width: 60px;
+    height: 22px;
+    /*cursor: pointer;*/
+    vertical-align: middle;
+    overflow: hidden;
+}
+.another-files dl dd.last div {
+    margin-bottom: 0px;
+}
+.another-files dl dd div.last {
+    margin-right: 0px;
+}
+
+/*.another-files dl.cell-format.hover {
+  background-color: #2C4BAE;
+  border-right: 1px solid #2c4bae;
+}*/
+.another-files dl dd.cell-file.hover div.quality,
+.another-files dl dd.cell-file.hover div.renderer,
+.another-files dl dd.cell-file.hover div.filesize {
+  background-color: #2C4BAE;
+  color: #fff;
+}
+
+
+.another-files dl dd.odd div {
+    background-color: #fff;
+}
+.another-files dl dd.even div {
+    background: #ccc;
+}
+
+/*.another-files dl dd.selected div {
+  color: #fff;
+  font-weight: bold;
+  background-color: #2C4BAE;
+}*/
+
+/* cells' size */
+.another-files dl dd div.quality { width: 70px; }
+.another-files dl dd div.renderer { width: 170px; }
+.another-files dl dd div.author { width: 60px; }
+.another-files dl dd div.filesize { width: 70px; }
+.another-files dl dd div.download { width: 70px; text-align: center; }
+
+.another-files dl.cell-format dd div.download span,
+.another-files dl.cell-format dd div.download a { 
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px; 
+    background: #3d5cbf;
+    padding: 3px 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.another-files dl.cell-format dd div.download.hover span,
+.another-files dl.cell-format dd div.download a:hover {
+    background: none;
+    border: 1px solid #3d5cbf;
+    padding: 2px 7px;
+    color: #000;
+    text-decoration: none;
+}

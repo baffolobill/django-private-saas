@@ -1,0 +1,39 @@
+.profile, .order-history {
+  margin: 0;
+  padding: 1em;;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-size: 100%;
+  width: 80%;
+}
+.profile>.title, .order-history>.title {
+  margin: 0.2em 0 1.3em;
+  padding: 0 0 0.2em 3em;;
+  font-size: 120%;
+  font-weight: bold;
+  border-bottom: 2px solid #3c3c3c;
+}
+
+.profile-table { width: 100%; }
+.profile-table tr {}
+.profile-table tr.odd {}
+.profile-table tr.even {}
+.profile-table tr th, .profile-table tr td { vertical-align: top; padding: 0.3em 0; margin: 0; }
+.profile-table tr th.key { 
+  text-align: right;
+  font-weight: bold;
+  width: 150px;
+}
+.profile-table tr td.val {
+  width: 300px;
+  padding-left: 0.5em;
+}
+.profile-table tr td.ext {
+  width: 150px;
+}
+
+.order-history {
+  margin-top: 1em;
+}

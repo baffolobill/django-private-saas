@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+
+  <title>CGSwap - Coming Soon</title>
+
+  <link href="{{MEDIA_URL}}css/addons.css" type="text/css" rel="stylesheet" />
+  <link href="{{MEDIA_URL}}css/first_page/cssmenu.css" type="text/css" rel="stylesheet"/>
+  <link href="{{MEDIA_URL}}css/first_page/default.css" type="text/css" rel="stylesheet"/>
+{% comment %}
+  <link href="{{MEDIA_URL}}css/layout.css" type="text/css" rel="stylesheet" />
+  <link href="{{MEDIA_URL}}css/template.css" type="text/css" rel="stylesheet" />
+{% endcomment %}
+<!--[if IE 7.0]>
+<style>
+.clearfix { display: inline-block; } /* IE7 xhtml */
+</style>
+<![endif]-->
+
+<style>
+body,html {height:100%;}
+#wrapper {height:100%;position:relative;width:100%;}
+#mainbody
+{
+  width: 700px;
+  height: 100px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-50px;
+  margin-left:-350px;
+}
+</style>
+</head>
+<body id="bd" class="fs3">
+  <a id="Top" name="Top"></a>
+ 
+  <div id="wrapper">
+    <div id="mainbody">
+      <div id="logo"></div>
+      <div id="content">
+	{% include "menu/mainnav.html" %}
+
+	{% include "layouts/search_form.html" %}
+      </div>
+    </div>    
+  </div>
+</body>
+</html>

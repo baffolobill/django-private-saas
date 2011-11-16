@@ -1,0 +1,63 @@
+/*\ container left block \*/
+#search-panel {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #000;
+}
+#search-panel .main 
+{ 
+    padding: 0;
+    border: none; 
+    background: none; 
+}
+
+#search-panel div.top,
+#search-panel div.mid,
+#search-panel div.bot {}
+
+#search-panel div.shadow-left {
+    background: url(../images/search_panel/search_toolbar_shadow_l.png) repeat-y top left;
+    padding-left: 13px;
+}
+
+
+#search-panel div.shadow-right {
+    background: url(../images/search_panel/search_toolbar_shadow_r.png) repeat-y top right;
+    padding-right: 13px;
+}
+#search-panel div.bot {
+    background: url(../images/search_panel/search_toolbar_shadow_b.png) repeat-x bottom left;
+    height: 25px;
+    position: relative;
+    margin: 0 25px 0 25px;
+}
+#search-panel div.shadow-lb,
+#search-panel div.shadow-rb {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+}
+#search-panel div.shadow-lb {
+    background: url(../images/search_panel/search_toolbar_shadow_bl.png) no-repeat bottom left;
+    left: -25px;
+}
+#search-panel div.shadow-rb {
+    background: url(../images/search_panel/search_toolbar_shadow_br.png) no-repeat bottom right;
+    right: -25px;
+}
+
+#search-panel .wrapper
+{
+    background: url(../images/search_panel/search_toolbar_bg.png) repeat;
+}
+
+
+/* search toolbar */
+#search-toolbar { bottom: -22px; }
+#search-toolbar .main { background: none !important; }
+
+#hide-search-form-button {
+    margin-left: 30px !important;
+}

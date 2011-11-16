@@ -1,0 +1,89 @@
+/** my **/
+.checkout-auth-form {
+    position: relative;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+/*    top: 25%;*/
+}
+.checkout-auth-form-content { 
+    height: 100%; 
+    min-height: 10px; 
+    position: relative;
+    background: #666;
+    color: #fff;
+}
+.checkout-auth-form-content > .body {
+    clear: both;
+    padding: 20px 20px 10px 13px;
+}
+.checkout-auth-form-label {
+    width: 120px;
+    float: left;
+    padding-top: 3px;
+}
+.checkout-auth-form-field {
+    float: left;
+    width: 135px;
+    border: none;
+}
+.checkout-auth-form-submit {
+    display: block;
+    clear: both;
+    float: right;
+    margin-top: 10px;
+}
+
+
+.checkout-auth-form-tl,
+.checkout-auth-form-tr,
+.checkout-auth-form-bl,
+.checkout-auth-form-br {
+    background: url(images/auth_shadow.png) no-repeat;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+}
+.checkout-auth-form-tl { background-position: 0px -9px; left: -14px; }
+.checkout-auth-form-tr { background-position: -26px -9px; left: 100%; margin-left: -12px; }
+.checkout-auth-form-bl { background-position: 0px -35px; margin: -26px 0 0 -14px; }
+.checkout-auth-form-br { background-position: -26px -35px; left: 100%; margin: -26px 0 0 -12px; }
+
+.checkout-auth-form-t,
+.checkout-auth-form-b {
+    background: url(images/auth_shadow.png);
+    display: block;
+    margin: 0 12px;
+}
+.checkout-auth-form-t { height: 9px; }
+.checkout-auth-form-b { height: 19px; background-position: 0px -61px; }
+
+.checkout-auth-form-l,
+.checkout-auth-form-r {
+    background: url(images/auth_shadow_lr.png);
+    position: absolute;
+    top: 26px;
+    bottom: 26px;
+    width: 14px;
+}
+.checkout-auth-form-l { left: -14px; }
+.checkout-auth-form-r { background-position: -14px 0px; left: 100%; }
+
+
+.checkout-auth-message {
+    width: 300px;
+    margin: 0 auto;
+}
+.checkout-auth-message span {
+    font-size: 100%;
+}
+.checkout-auth-message.error {
+    color: #AD0C0C;
+}
+
+.checkout-auth {
+    top: 10%;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}

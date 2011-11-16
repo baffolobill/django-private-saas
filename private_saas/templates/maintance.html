@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load compress %}
+
+{% block header %}
+
+  <script src="{{STATIC_URL}}js/jquery.blockUI.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/jquery.plugins/formcheck/jquery.formcheck.js" type="text/javascript"></script>
+  <script src="{{STATIC_URL}}js/uprofile/uprofile.js" type="text/javascript"></script>
+
+  <link href="{{STATIC_URL}}js/jquery.plugins/formcheck/jquery.formcheck.css" type="text/css" rel="stylesheet" />
+  <link href="{{STATIC_URL}}css/auth.css" type="text/css" rel="stylesheet" />
+  <link href="{{STATIC_URL}}css/uprofile/default.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript">
+function show_block(block_id){
+  $("div.fm").map(function(){ if(!$(this).hasClass("no-display")) $(this).addClass("no-display"); });
+  $("#" + block_id).removeClass("no-display");
+
+  return false;
+}
+{% if request.user.is_authenticated %}
+jQuery(document).ready(function($){
+  window.location.href = '{% url profile-index %}';
+});
+{% endif %}
+</script>
+{% endblock %}
+
+{% block body %}
+<div class="private-box">
+  <div class="spot"></div>
+  <div class="line"></div>
+
+  <div id="sign-in" class="sign-in fm">
+    <form action="{% url profile-login %}" method="post">
+      {% csrf_token %}
+      <div class="sign-in__row">
+        <label for="signin__login">Login</label>
+      </div>
+      <div class="sign-in__row">
+        <input type="text" maxlength="30" size="30" autocomplete="off" id="signin__login" class="signin__field" name="signin__username" value="" vmethod="pattern" vparam="^[0-9A-Za-z_\-]*$" vnotice="Only english letters, numbers, underscore and hyphen"/>
+      </div>
+      <span class="sign-in__hspacer"></span>
+      <div class="sign-in__row">
+        <label for="signin__password">Password</label>
+      </div>
+      <div class="sign-in__row">
+        <input type="password" maxlength="255" size="30" autocomplete="off" id="signin__password" class="signin__field" name="signin__password" value="" vmethod="pattern" vparam=".*"/>
+      </div>
+      <span class="sign-in__hspacer"></span>
+
+      {% comment %}
+      <div class="sign-in__row">
+        <input type="checkbox" name="signin__remember" id="signin__remember" checked="checked" />
+        <label for="signin__remember">Remember me</label>
+      </div>
+      <span class="sign-in__hspacer"></span>
+      {% endcomment %}
+
+      <div class="sign-in__row">
+        <input type="submit" class="signin__button" value="Sign In" onclick="return UProfile.signin(this);"/>
+        <span class="button__link button__registration" onclick="return show_block('registration');">Registration</span>
+        <span class="button__link button__reset-password" onclick="return show_block('reset-password');">Reset password</span>
+      </div>
+    </form>
+  </div>
+
+  <div id="registration" class="registration no-display fm">
+    <h2 class="title">Registration</h2>
+    <form action="{% url profile-register %}" method="post">{% csrf_token %}
+      <div class="reg__row">
+        <label for="reg__login">Login</label>
+      </div>
+      <div class="reg__row">
+        <input type="text" maxlength="30" name="username" id="reg__login" value="" class="reg__field" vmethod="pattern" vparam="^[0-9A-Za-z_\-]*$" />
+      </div>
+      <div class="reg__row reg__help">Only english letters, numbers, underscore and hyphen</div>
+      <span class="reg__hspacer"></span>
+
+      <div class="reg__row">
+        <label for="reg__email">E-mail</label>
+      </div>
+      <div class="reg__row">
+        <input type="text" maxlength="75" name="email" id="reg__email" value="" class="reg__field" vmethod="pattern" vparam="mail" />
+      </div>
+      <span class="reg__hspacer"></span>
+
+      <div class="reg__row">
+        <label for="reg__password1">Password</label>
+      </div>
+      <div class="reg__row">
+        <input type="password" maxlength="255" name="password1" id="reg__password1" value="" class="reg__field" vmethod="pattern" vparam=".*" />
+      </div>
+      <div class="reg__row">
+        <label for="reg__password2">password again</label>
+      </div>
+      <div class="reg__row">
+        <input type="password" maxlength="255" name="password2" id="reg__password2" value="" class="reg__field" vmethod="pattern" vparam=".*" />
+      </div>
+      <span class="reg__hspacer"></span>
+
+
+      <div class="reg__row">
+        <label for="reg__invite">Invite</label>
+      </div>
+      <div class="reg__row">
+        <input type="text" maxlength="100" name="invite" id="reg__invite" value="" class="reg__field" vmethod="pattern" vparam=".*" />
+      </div>
+      <span class="reg__hspacer"></span>
+
+
+      <div class="reg__row">
+        {{reg_form.captcha}}
+        <br/>
+        <input type="text" maxlength="10" size="10" name="captcha" id="reg__captcha" value="" class="reg__field" vmethod="pattern" vparam="^[0-9A-Za-z]*$" vnotice="Only letters and numbers"/>
+      </div>
+      <span class="reg__hspacer"></span>
+
+      <div class="reg__row">
+        <input type="button" name="reg__button" class="reg__button" value="Register" onclick="return UProfile.register(this);" />
+        <span class="button__link button__reset-password" onclick="return show_block('reset-password');">Reset password</span>
+        <span class="button__link button__sign-in" onclick="return show_block('sign-in');">Sign-In</span>
+      </div>
+    </form>
+  </div>
+
+  <div id="reset-password" class="reset-password no-display fm">
+    <h2 class="title">Reset password</h2>
+    <form action="{% url profile-password-reset %}" method="post">
+      {% csrf_token %}
+      <div class="reg__row">
+        <label for="reset__username">Login</label>
+      </div>
+      <div class="reg__row">
+        <input type="text" maxlength="30" name="username" id="reset__username"
+            value="" class="reg__field" vmethod="pattern" vparam="^[0-9A-Za-z_\-]*$"/>
+      </div>
+      <span class="reg__hspacer"></span>
+
+      {% comment %}
+      <div class="reg__row">
+        <!--<img src="" width="" height="" />-->
+        <p>captcha</p>
+        <input type="text" maxlength="10" size="10" name="reset__captcha"
+            id="reset__captcha" value="" class="reg__field" />
+      </div>
+      <span class="reg__hspacer"></span>
+      {% endcomment %}
+
+      <div class="reg__row">
+        <input type="button" name="reset__button" class="reg__button" value="Reset" onclick="return UProfile.reset_password(this);"/>
+        <span class="button__link button__registration" onclick="return show_block('registration');">Registration</span>
+        <span class="button__link button__sign-in" onclick="return show_block('sign-in');">Sign-In</span>
+      </div>
+    </form>
+  </div>
+
+  <div class="description">
+    <p>CGSwap is a hypermarket<br/>of e-goods of & for computer graphics.</p>
+    <p>Our mission<br/>is cut down waste of time of creative personality to zero.</p>
+  </div>
+
+  <div class="follow-us">
+    <a href="http://twitter.com/cgswap" title="Follow us on Twitter">Follow us on Twitter</a>
+  </div>
+
+
+  <div class="copyright">&copy;2011 CGSwap</div>
+</div>
+{% endblock %}

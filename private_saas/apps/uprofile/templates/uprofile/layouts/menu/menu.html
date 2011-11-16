@@ -1,0 +1,22 @@
+{% if menu %}
+<ul class="cp-menu">
+    {% for mitem in menu %}
+        {% if not mitem.disabled %}
+        <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+            <a href="{{mitem.url}}" {% if mitem.onclick %}onclick="{{mitem.onclick}}"{% endif %}>{{mitem.label}}</a>
+            {% if mitem.items|length %}
+                <ul>
+                {% for sitem in mitem.items %}
+                    {% if not sitem.disabled %}
+                    <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+                        <a href="{{sitem.url}}" {% if sitem.onclick %}onclick="{{sitem.onclick}}"{% endif %}>{{sitem.label}}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}

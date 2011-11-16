@@ -1,0 +1,82 @@
+/*\ model3d block \*/
+.texture {
+    margin: 0 10px 10px 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+.texture.last-item {
+    margin: 0 0 10px;
+}
+
+.texture .main {
+    background: #3c3c3c;
+}
+
+.texture .top,
+.texture .mid,
+.texture .bot {
+    padding: 5px 6px 0;
+}
+
+.texture .top .title {
+    color: #fff;
+    font-size: 110%;
+    font-family: Aria,"Trebuchet MS",sans-serif;
+}
+.texture .top .title a, 
+.texture .top .title a:link, 
+.texture .top .title a:visited,
+.texture .top .title a:active {
+    color: #fff;
+/*    text-decoration: underline;*/
+    border-bottom: 1px dashed #fff;
+}
+.texture .top .title a:hover {
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+    text-decoration: none;
+}
+
+.texture .mid .content { text-align: center; }
+.texture .mid .content img { height: 140px; }
+
+.texture .bot .button { float: left; border: none; background: none; }
+.texture .bot .button a { 
+    display: block; 
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 110%;
+    font-weight: normal;
+    color: #fff;
+}
+.texture .bot .button a:hover,
+.texture .bot .button a:link,
+.texture .bot .button a:active,
+.texture .bot .button a:visited {
+    text-decoration: none;
+}
+
+.texture .bot .button a span {
+    dispaly: block;
+    text-decoration: underline;
+}
+
+.texture .bot .button a:hover {
+    color: #b94157;
+}
+
+.texture .bot .button a:hover span {
+    text-decoration: underline;
+}
+
+.texture .bot .button a span.arrow-down-icon {
+    background: transparent url(../images/content_slider/arrow_down_slider.png) no-repeat center right;
+    padding-right: 20px;
+}
+.texture .bot .button a:hover span.arrow-down-icon {
+    background: transparent url(../images/content_slider/arrow_down_hover_slider.png) no-repeat center right;
+}
+
+.texture .bot .more-img {}
+
+.texture .bot .download { float: right; }

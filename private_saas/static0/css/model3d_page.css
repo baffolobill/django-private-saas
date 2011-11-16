@@ -1,0 +1,412 @@
+#mainbody {
+    margin-left: 0px !important;
+}
+
+.model3d-block
+{
+    margin: 0;
+    padding: 0 10px;
+    clear: both;
+    float: left;
+}
+
+.model3d-block > .main > .mid
+{
+    margin-top: 20px;
+}
+
+.model3d-block .module
+{
+    float: left;
+    width: 200px;
+    clear: both;
+/*    border: 1px solid;*/
+}
+
+#model3d-body
+{
+    padding: 0 0 0 20px;
+    width: 740px;
+    float: right;
+}
+#model3d-body > .main { margin-left: 20px; }
+
+/* section title */
+.section-title.title,
+.model3d-block .top .title {
+    font-size: 170%;
+    font-weight: bold;
+    float: left;
+}
+
+.section-title.title {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+.section-title.title span {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title.title span.highlight 
+{
+    float: none;
+    display: inline;
+    color: #902a90;
+}
+
+.section-title.title span.separator {
+    margin: 0 5px;
+    font-size: 95%;
+    padding: 2px 0 0;
+}
+.section-title.title a,
+.section-title.title a:link,
+.section-title.title a:visited,
+.section-title.title a:active {
+    display: block;
+    float: left;
+    color: #000;
+    border-bottom: 1px dashed #000;
+}
+.section-title.title a:hover {
+    text-decoration: none;
+    color: #b94157;
+    border-bottom: 1px dashed #b94157;
+}
+
+/** copyass logo **/
+.module .copyass-logo
+{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.module .copyass-logo img
+{
+    max-width: 200px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+/** attributes **/
+.module .attributes
+{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 97%;
+}
+/*** bundle text in attributes block ***/
+.module .attributes .bundle-text {}
+.module .attributes .bundle-text .value a {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+.module .attributes .bundle-text .value a:hover { 
+    text-decoration: none;
+    color: #b94157;
+    border-bottom: 1px dashed #B94157;
+}
+/*** vendor link in attributes block ***/
+.module .attributes .vendor-text {}
+.module .attributes .vendor-text .value a {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+.module .attributes .vendor-text .value a:hover { 
+    text-decoration: none;
+    color: #b94157;
+    border-bottom: 1px dashed #B94157;
+}
+
+
+/** other bundles **/
+.module .models3d-bundles-block 
+{
+    margin-top: 60px;
+}
+
+
+/*div#model3d-block { width: 100%; }
+
+div#model3d-block .title {
+    text-align: left;
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#model3d-block .title span {
+    font-size: 130%;
+    font-weight: bold;
+    color: #000;
+}*/
+
+div#model3d-file-format-filter {
+    margin-bottom: 20px;
+}
+
+/*\ BUTTON BAR \*/
+div.button-bar { 
+    margin: 0 auto; 
+    padding: 0; 
+    display: table;
+    overflow: hidden;
+}
+
+div.button-bar ul {
+/*    position: relative;*/
+    display: table-row;
+    list-style: none;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.button-bar ul li {
+    display: table-cell;
+    float: left;
+    height: 31px; /* total height = height + padding-top */
+    font-size: 130%;
+    margin: 0;
+    padding: 6px 8px 0 6px;
+    background: url(../images/button_bar/button_bar_bg.png) no-repeat -20px 0px;
+}
+
+div.button-bar ul li a,
+div.button-bar ul li a:hover,
+div.button-bar ul li a:link,
+div.button-bar ul li a:active,
+div.button-bar ul li a:visited {
+    text-decoration: none;
+}
+
+div.button-bar ul li a span {
+    margin: 0 4px 0 2px;
+    border-bottom: 1px dashed #000;
+}
+
+div.button-bar ul li.delimiter { margin: 0; padding: 0; }
+
+div.button-bar ul li.delimiter span {
+    width: 1px;
+    float: left;
+    height: 37px;
+    padding: 0;
+    margin: 0 0 0 -1px;
+}
+div.button-bar ul li.delimiter span {
+    background: url(../images/button_bar/button_bar_title_delimiter.png) no-repeat top right;
+}
+
+div.button-bar ul li.title-delimiter span {
+    width: 2px;
+    margin-left: -2px;
+    background: url(../images/button_bar/button_bar_title_delimiter.png) no-repeat top left;
+}
+
+div.button-bar ul li.title {
+    margin: 0 !important;
+    background: url(../images/button_bar/button_bar_bg.png) no-repeat top left;
+    float: left;
+}
+
+div.button-bar ul li.title span {
+    margin-left: 15px;
+    margin-right: 4px;
+    font-size: 100% !important;
+}
+
+div.button-bar ul li.last-item {
+    background: url(../images/button_bar/button_bar_bg.png) no-repeat top right;
+}
+
+div.button-bar ul li.last-item span {
+    margin-right: 15px;
+}
+
+/* active state */
+div.button-bar ul li.active {
+    background: url(../images/button_bar/button_bar_bg_selected.png) no-repeat -20px 0px;
+}
+
+div.button-bar ul li.active span {
+    color: #fff;
+    border: none;
+}
+
+div.button-bar ul li.last-item.active {
+    background: url(../images/button_bar/button_bar_bg_selected.png) no-repeat top right;
+}
+
+
+/*\ MODEL3D FILES \*/
+#model3d-files {
+/*  margin-left: 20px;*/
+/*  margin-right: 10px;*/
+    margin-bottom: 20px;
+}
+#model3d-files dl {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#model3d-files dl.even {
+    margin-top: 5px;
+}
+#model3d-files dl.even dt,
+#model3d-files dl.even dd div {
+    background: #ddd;
+}
+#model3d-files dl.even dd.even div {
+    background: #eee;
+}
+#model3d-files dl dt {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    position: absolute;
+/*    overflow: hidden;*/
+}
+#model3d-files dl dt span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#model3d-files dl#cell-format-header dt { background: none; }
+#model3d-files dl#cell-format-header dt span { 
+    height: 22px; 
+    padding: 5px 0 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+}
+#model3d-files dl#cell-format-header dd div.download {
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+#model3d-files dl#cell-format-header dd span {
+    font-weight: bold;
+}
+#model3d-files dl#cell-format-header dt span,
+#model3d-files dl#cell-format-header dd div {
+    background: #bbb;
+    cursor: default;
+}
+#model3d-files dl dd {
+    margin: 0 0 0 56px;
+    padding: 0;
+    display: block;
+    clear: left;
+    position: relative;
+}
+#model3d-files dl dd div {
+    display: block;
+    float: left;
+    margin: 0 1px 1px 0;
+    padding: 5px 10px 0 5px;
+    background: #eee;
+    width: 60px;
+    height: 22px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#model3d-files dl dd.last div {
+    margin-bottom: 0px;
+}
+#model3d-files dl dd.even div {
+    background: #ccc;
+}
+
+#model3d-files dl dd.active div {
+  color: #fff;
+  font-weight: bold;
+  background: url(../images/model3d_files_table_row_selected.png) repeat-x top left;
+}
+#model3d-files dl dd div.arrow {
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: none;
+    width: 10px;
+    overflow: visible;
+}
+#model3d-files dl dd.active div.arrow span {
+  display: block;
+  height: 27px;  /* actually height must be 28px, but 1px is used for spacing beetwen rows */
+  width: 27px;
+  border: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: -8px;
+  z-index: 150;
+  background: url(../images/model3d_files_table_row_selected_arrow.png) no-repeat -3px -3px;
+}
+
+/* cells' size */
+#model3d-files dl dd div.quality { width: 40px; }
+#model3d-files dl dd div.renderer { width: 55px; }
+#model3d-files dl dd div.author { width: 60px; }
+#model3d-files dl dd div.filesize { width: 40px; }
+#model3d-files dl dd div.download { width: 60px; }
+
+/*\ MODEL3D FILE IMAGES \*/
+#model3d-file-images ul {
+    margin: 0 0 0 0px;
+    padding: 0;
+    display: block;
+    clear: both;
+    list-style: none;
+    list-style-type: none;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#model3d-file-images ul li {
+    display: block;
+    float: left;
+/*    width: 100px;*/
+/*    height: 140px;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#model3d-file-images ul li a {}
+
+#model3d-file-images ul li a img {
+    height: 80px;
+}
+#model3d-file-images ul li.last-item { margin-right: 0px; }
+
+
+/** content-slider **/
+#model3d-body .slider-block {
+    margin-top: 50px !important;
+}

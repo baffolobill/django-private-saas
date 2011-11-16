@@ -1,0 +1,110 @@
+/* MAIN LAYOUT DIVS  */
+.wrap { width: 100%; clear: both; }
+.main { 
+/*    width: 980px; */
+    width: 100%;
+    margin: 0 auto; 
+    position: relative;
+}
+.module {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.module img {
+    max-width: 200px;
+}
+
+.column { overflow: hidden; float: left; }
+
+
+/* Gutter */
+.main .inner {
+/* We use liquid layout, so we need to insert a div which will create margin if need */
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#main .inner { padding: 0 !important; margin-left: 5px; margin-right:  5px; }
+
+#mainnav .inner { padding: 0 !important; margin-left: 5px; margin-right:  5px; }
+
+.column div.moduletable {
+/* for side columns and spotlight, we only need to add margin or padding to Module */
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* MAIN COLUMN */
+#mainbody { /*float: right;*/ }
+#current-content, #main { /*float: left;*/ }
+
+/* SIDE COLUMNS */
+.colswrap {}
+
+/* Left Column */
+/*#left-block { width: 270px; }*/
+
+/* HEADER */
+#header {}
+
+/* FOOTER */
+#footer { clear: both; }
+
+
+/** toolbar **/
+#top-toolbar {}
+
+.toolbar {
+    display: block;
+    position: relative;
+}
+
+.hortoolbar {
+    height: 31px;
+}
+
+.vertoolbar {
+    width: 30px;
+}
+/*
+#mainnav-bg
+{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #3c3c3c;
+}
+
+#top-toolbar-bg {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 31px;
+    width: 100%;
+    background: transparent url(../images/mainnav_shadow_repeat.png) repeat-x top left;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}*/
+
+/*#container
+{
+    background: #FCFCFC;
+}*/
+
+/*#wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}*/
+
+/** test section **/
+/*#footer, #container, #top-toolbar { display: none; }*/

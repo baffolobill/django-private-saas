@@ -1,0 +1,26 @@
+.advertisment { margin: 0; padding: 0; }
+.advertisment.main { margin: 0 0 20px !important; padding: 0; }
+.advertisment ul 
+{
+    display: block;
+    clear: both;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    width: 100%;
+}
+.advertisment ul li 
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.advertisment ul li a,
+.advertisment ul li a:link,
+.advertisment ul li a:visited,
+.advertisment ul li a:active { margin:0 auto; padding:0; }
+.advertisment ul li a:hover { text-decoration: none; }
+.advertisment ul li a img {}

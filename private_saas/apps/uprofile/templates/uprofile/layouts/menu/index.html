@@ -1,0 +1,18 @@
+{% load cp_menu %}
+
+{% spaceless %}
+<!-- left block -->
+<div id="bodyMenu" class="bodyMenu fixedScrolling clearfix">
+  {#<div class="catalog-menu clearfix">#}
+  {% cp_menu %}
+  {#</div>#}
+</div><!-- end #left-block -->
+{% endspaceless %}
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $('#bodyMenu').hover(
+        function(){ $(this).addClass('hover'); },
+        function(){ $(this).removeClass('hover'); }
+    );
+});
+</script>

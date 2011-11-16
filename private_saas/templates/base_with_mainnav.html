@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+{# load menu #}
+
+{% block body %}
+  {{block.super}}
+
+<div id="mainnav" class="menu">
+  <div class="content clearfix">
+    {# mainnav #}
+
+    <span id="logo"></span>
+
+    {# include "menu/shopping_panel.html" #}
+
+    {# include "menu/langnav.html" #}
+
+    {% include "menu/usernav.html" %}
+  </div>
+</div>
+
+<div id="container" class="container">
+
+  {% block left_block %}{% endblock %}
+
+  <div class="content clearfix">
+    <div id="content-context-loader" class="context-loader" style="display:none;">{% trans 'Sending Request...' %}</div>
+
+    {% block container %}{% endblock %}
+
+  </div>
+</div><!-- end #container -->
+{% endblock %}
+
+
+{% block footer %}
+  {{block.super}}
+  {# include 'layouts/footer_block.html' #}
+{% endblock %}

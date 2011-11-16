@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-21 15:24+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: settings.py:46 templates/menu/langnav.html:7
+msgid "Russian"
+msgstr "Русский"
+
+#: settings.py:47 templates/menu/langnav.html:13
+msgid "English"
+msgstr ""
+
+#: templates/layouts/search_panel.html:13
+msgid "For example"
+msgstr "Например"
+
+#: templates/layouts/search_panel.html:16
+msgid "advanced search"
+msgstr "расширенный поиск"
+
+#: templates/layouts/search_panel.html:31
+msgid "hide search form button"
+msgstr "скрыть"
+
+#: templates/layouts/toolbar_panel.html:11
+msgid "show search form button"
+msgstr "показать"
+
+#: templates/layouts/toolbar_panel.html:20
+msgid "view settings button"
+msgstr "настройки"
+
+#: templates/layouts/toolbar_panel.html:28
+msgid "catalog button"
+msgstr "каталог"
+
+#: templates/layouts/toolbar_panel.html:34
+msgid "search button"
+msgstr "поиск"
+
+#: templates/menu/langnav.html:7 templates/menu/langnav.html.py:13
+msgid "Switch to"
+msgstr "Переключиться на"
+
+#: templates/menu/mainnav.html:7
+msgid "Education video"
+msgstr "Видео уроки"
+
+#: templates/menu/mainnav.html:7
+msgid "e-video"
+msgstr ""
+
+#: templates/menu/mainnav.html:13
+msgid "3d models"
+msgstr "3d модели"
+
+#: templates/menu/mainnav.html:13
+msgid "models"
+msgstr "models3d"
+
+#: templates/menu/mainnav.html:19
+msgid "textures"
+msgstr ""
+
+#: templates/menu/mainnav.html:25
+msgid "Audio"
+msgstr "audio"
+
+#: templates/menu/mainnav.html:31
+msgid "Movie-clips"
+msgstr "movie-clips"
+
+#: templates/menu/mainnav.html:37
+msgid "HDRI"
+msgstr ""
+
+#: templates/menu/shopping_panel.html:12
+msgid "Look at shopping cart"
+msgstr "Просмотреть список покупок"
+
+#: templates/menu/shopping_panel.html:13
+#, fuzzy
+msgid "open shopping cart"
+msgstr "открыть"
+
+#: templates/menu/usernav.html:9
+msgid "See profile"
+msgstr "Профиль"
+
+#: templates/menu/usernav.html:15
+msgid "Sign out"
+msgstr "Выйти"
+
+#: templates/menu/usernav.html:15
+msgid "sign out"
+msgstr "выйти"
+
+#: templates/menu/usernav.html:21
+msgid "Sign In"
+msgstr "Войти"
+
+#: templates/models3d/download_block.html:7 templates/models3d/items.html:29
+msgid "download"
+msgstr "скачать"
+
+#: templates/models3d/images_preview_block.html:7
+#: templates/models3d/items.html:27
+msgid "more"
+msgstr "еще изобр."
+
+#: templates/models3d/items.html:16
+msgid "Go to this model3d page"
+msgstr "Перейти на страницу 3d модели"
+
+#: templates/models3d/items.html:81
+msgid "nothing found"
+msgstr "ничего не найдено"
+
+#: templates/models3d/model3d/model3d_format_filter.html:4
+msgid "choose model3d format"
+msgstr "Выберите формат"
+
+#: templates/models3d/model3d/model3d_format_filter.html:14
+#, fuzzy
+msgid "select all model3d formats"
+msgstr "все"
+
+#: templates/models3d/model3d/model3d_page.html:43
+msgid "Go to previous page"
+msgstr "Перейти на предыдущую страницу"
+
+#: templates/models3d/model3d/model3d_page.html:44
+#, fuzzy
+msgid "back button"
+msgstr "назад"
