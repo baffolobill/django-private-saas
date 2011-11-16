@@ -4,21 +4,21 @@
 #
 #     pip install -U -r requirements.pip
 mysql-python
-django==1.2.3
-django-extensions==0.5
-django-staticfiles==0.3.0
-django-debug-toolbar
-django-sphinx
-django-ratings
-markdown2
-docutils
-sorl-thumbnail
-python-memcached
-django-keyedcache
-django-livesettings
-django-signals-ahoy
-django-threaded-multihost
-django-app-plugins
+django
+#django-extensions==0.5
+#django-staticfiles==0.3.0
+#django-debug-toolbar
+#django-sphinx
+#django-ratings
+#markdown2
+#docutils
+#sorl-thumbnail
+#python-memcached
+#django-keyedcache
+#django-livesettings
+#django-signals-ahoy
+#django-threaded-multihost
+#django-app-plugins
 
 
 django_compressor
