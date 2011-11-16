@@ -78,6 +78,7 @@ def profile__login(request):
     if user is not None:
         if user.is_active:
             auth_login(request, user)
+            _subscribe_user(user)
             return JSONResponse({'success':1, 'message':unicode(_('Success')), 'redirect_to':reverse('profile-index')})
         else:
             return JSONResponse({'success':1, 'error':unicode(_('Account is disabled. Please contact with admins.'))})
