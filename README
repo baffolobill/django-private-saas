@@ -1,14 +1,31 @@
 Private SaaS is a start point (boilerplate) to build subscription-like service with invite based registration.
 
+Version: 0.0
+Not ready for production usage.
+
 Features:
 - invite based registration;
 - time based subscription with bonus period;
 - promocodes, which allow extend subscription;
 - ajax based log in, registration and change/reset password;
-
+- based on lincolnloop' boilerplate (https://github.com/lincolnloop/django-startproject);
 
 TODO:
 - module based payment;
 - remove unnecessary js/css/images;
 - remove django-registration dependency;
-- try to make apps independent;
+- try to split on independent apps;
+- clean conf dir;
+
+
+Dependencies:
+- django-registration;
+- django-compressor;
+
+
+Installation:
+1) git clone git://github.com/baffolobill/django-private-saas.git
+2) cd private_saas
+3) bin/manage.py syncdb
+4) bin/manage.py runserver
+5) go to http://localhost:8000
