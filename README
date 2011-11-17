@@ -8,6 +8,7 @@ Features:
 - time based subscription with bonus period;
 - promocodes, which allow extend subscription;
 - ajax based log in, registration and change/reset password;
+- very simple feedback system;
 - based on lincolnloop' boilerplate (https://github.com/lincolnloop/django-startproject);
 
 TODO:
